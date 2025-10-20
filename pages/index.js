@@ -128,13 +128,21 @@ const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL
   return (
     <>
       <Head>
-        <title>{pageTitle}</title>
-        <meta name="description" content={pageDescription} />
+        <title>YouTube Shorts Downloader: Download YouTube Shorts Video</title>
+        <meta name="description" content="With our YouTube Shorts Downloader, you can download your favorite YouTube Shorts videos in the highest available quality as MP4 (video) files for free." />
         <meta
           name="keywords"
           content="YouTube Shorts Downloader, ShortsLoad, download YouTube Shorts, Shorts MP4 downloader, Shorts video download, SaveTube alternative"
         />
         <link rel="canonical" href={pageUrl} />
+          <meta property="og:title" content="YouTube Shorts Downloader: Download YouTube Shorts Video" />
+        <meta
+          property="og:description"
+          content="Free and fast tool to download YouTube Shorts videos in HD MP4 format — 360p, 720p, 1080p, with audio and no watermark."
+        />
+        <meta property="og:image" content="https://shortsload.com/og-image.jpg" />
+        <meta property="og:url" content="https://shortsload.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       <main className="min-h-screen bg-gray-50 flex flex-col items-center px-4 py-10">
@@ -280,9 +288,7 @@ const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL
   <p>
     Try ShortsLoad today and experience the easiest way to <strong>download YouTube Shorts videos in MP4 format</strong>. Bookmark this page — your future self will thank you every time you need a quick, clean, and high-quality download.
   </p>
-</section>
-
-
+    </section>
       </main>
     </>
   );
