@@ -55,9 +55,9 @@ export default function InstagramVideoDownloader() {
 
   // ✅ SEO Data
   const seoTitle =
-    "Instagram Video Downloader — Download Instagram Reels, Posts & Videos Free | ShortsLoad";
+    "Instagram Video Downloader — Download Instagram Reels, Videos";
   const seoDescription =
-    "Download Instagram videos, Reels, and posts for free in HD MP4 format. Fast, secure, and watermark-free Instagram video downloader. Works on all devices.";
+    "Download Instagram videos and Reels for free in HD MP4 format. Fast, secure, and watermark-free Instagram video downloader. Works on all devices.";
   const seoKeywords =
     "instagram video download, instagram video downloader, instagram post download, instagram download video, instagram reels download, free instagram downloader";
   const pageUrl = "https://shortsload.com/instagramvideodownloader";

@@ -54,7 +54,7 @@ export default function FacebookVideoDownloader() {
 
   // ✅ SEO Metadata
   const seoTitle =
-    "Facebook Video Downloader — Download Facebook Videos & Reels in HD | ShortsLoad";
+    "Facebook Video Downloader — Download Facebook Videos";
   const seoDescription =
     "Free Facebook Video Downloader — download videos, reels, and public posts from Facebook in HD and 4K MP4 format. Fast, secure, and no watermark.";
   const seoKeywords =

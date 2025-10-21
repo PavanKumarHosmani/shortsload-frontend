@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "https://www.shortsload.com/:path*",
+      "destination": "https://shortsload.com/:path*",
+      "permanent": true
+    }
+  ]
+}
