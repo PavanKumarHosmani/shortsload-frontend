@@ -9,6 +9,11 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
   },
 
+  experimental: {
+    optimizeCss: true,
+    scrollRestoration: true,
+  },
+
   async redirects() {
     return [
       { source: "/index.html", destination: "/", permanent: true },
