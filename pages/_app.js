@@ -18,6 +18,13 @@ export default function App({ Component, pageProps }) {
           content="ShortsLoad — Free YouTube Shorts Downloader. Save Shorts videos in 360p, 720p, or 1080p HD MP4 instantly without watermark."
         />
         <link rel="icon" href="/favicon.ico" />
+
+        {/* ✅ Google AdSense Auto Ads */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2964380688781577"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
 
       {/* 🌟 Global Header */}
