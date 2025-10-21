@@ -9,17 +9,14 @@ export default function App({ Component, pageProps }) {
       <Head>
         {/* 🌐 Global Meta Tags */}
         <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
           content="ShortsLoad — Free YouTube Shorts Downloader. Save Shorts videos in 360p, 720p, or 1080p HD MP4 instantly without watermark."
         />
         <link rel="icon" href="/favicon.ico" />
 
-        {/* ✅ Google AdSense Code (Clean + No Warnings) */}
+        {/* ✅ Google AdSense Auto Ads Script (clean + compliant) */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2964380688781577"
@@ -37,15 +34,6 @@ export default function App({ Component, pageProps }) {
 
       {/* ⚙️ Global Footer */}
       <Footer />
-
-      {/* ✅ Ensure AdSense Initializes Correctly */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            (adsbygoogle = window.adsbygoogle || []).push({});
-          `,
-        }}
-      />
     </>
   );
 }
