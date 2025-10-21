@@ -2,293 +2,247 @@
 
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from "react";
-import { createFFmpeg, fetchFile } from "@ffmpeg/ffmpeg";
-
-// ✅ Load FFmpeg locally (avoids CORS issues)
-const ffmpeg = createFFmpeg({
-  log: true,
-  corePath: "/ffmpeg/ffmpeg-core.js", // served from public/ffmpeg/
-});
 
 export default function Home() {
-  const [url, setUrl] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [video, setVideo] = useState(null);
-  const [error, setError] = useState("");
-  const [progress, setProgress] = useState(0);
-  const [converting, setConverting] = useState(false);
-  const [selectedQuality, setSelectedQuality] = useState("");
-
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL
-
-
-  // 🎥 Fetch video info
-  const handleFetch = async () => {
-    setError("");
-    setVideo(null);
-    setSelectedQuality("");
-    if (!url) return setError("Please enter a YouTube Shorts URL");
-    setLoading(true);
-
-    try {
-      const res = await fetch(`${API_BASE}/api/getinfo?url=${encodeURIComponent(url)}`);
-      const text = await res.text();
-
-      if (text.startsWith("<")) {
-        throw new Error("Invalid API response — backend might not be reachable.");
-      }
-
-      const data = JSON.parse(text);
-      if (data.error) throw new Error(data.error);
-
-      setVideo(data);
-    } catch (err) {
-      console.error("Fetch error:", err);
-      setError(err.message || "Failed to fetch video info");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  // 🎧 Merge video + audio using FFmpeg
-  const handleMerge = async (videoUrl, audioUrl, title) => {
-    setConverting(true);
-    setProgress(0);
-
-    try {
-      if (!ffmpeg.isLoaded()) await ffmpeg.load();
-      const videoData = await fetchFile(videoUrl);
-      const audioData = await fetchFile(audioUrl);
-
-      ffmpeg.FS("writeFile", "video.mp4", videoData);
-      ffmpeg.FS("writeFile", "audio.m4a", audioData);
-      ffmpeg.setProgress(({ ratio }) => setProgress(Math.round(ratio * 100)));
-
-      await ffmpeg.run(
-        "-i",
-        "video.mp4",
-        "-i",
-        "audio.m4a",
-        "-c:v",
-        "copy",
-        "-c:a",
-        "aac",
-        "-shortest",
-        "output.mp4"
-      );
-
-      const data = ffmpeg.FS("readFile", "output.mp4");
-      const blob = new Blob([data.buffer], { type: "video/mp4" });
-      const link = document.createElement("a");
-      link.href = URL.createObjectURL(blob);
-      link.download = `${title || "video"}.mp4`;
-      link.click();
-    } catch (err) {
-      console.error(err);
-      alert("❌ Merge failed");
-    }
-
-    setConverting(false);
-  };
-
-  // 🎯 Handle download
-  const handleDownload = async () => {
-    if (!selectedQuality) return alert("Select a quality first!");
-    const format = video.formats.find((f) => f.quality === selectedQuality);
-    if (!format) return alert("Invalid quality");
-
-    if (format.hasAudio && format.hasVideo) {
-      const link = document.createElement("a");
-      link.href = format.url;
-      link.download = `${video.title || "video"}_${selectedQuality}.mp4`;
-      link.click();
-    } else if (!format.hasAudio && format.hasVideo) {
-      const audio = video.formats.find((f) => f.hasAudio && !f.hasVideo);
-      if (!audio) return alert("No audio found to merge");
-      handleMerge(format.url, audio.url, video.title);
-    } else {
-      alert("Unsupported format type");
-    }
-  };
-
-  // ✅ SEO Metadata
-  const pageTitle = video
-    ? `${video.title} — Download YouTube Short | ShortsLoad`
-    : "ShortsLoad — Free YouTube Shorts Downloader (360p/720p/1080p)";
-  const pageDescription = video
-    ? `Download "${video.title}" from YouTube Shorts in MP4 format instantly. Choose 360p, 720p, or 1080p with audio.`
-    : "ShortsLoad lets you download YouTube Shorts videos in MP4 format instantly — free, safe, and no watermark.";
-
-  const pageImage = video?.thumbnail || "https://shortsload.com/og-image.jpg";
-  const pageUrl = video
-    ? `https://shortsload.com/?video=${encodeURIComponent(video.title)}`
-    : "https://shortsload.com/";
+  const pageTitle =
+    "ShortsLoad — Free Video & File Tools | Instagram, Facebook, PDF & Image Converters";
+  const pageDescription =
+    "Free online tools by ShortsLoad — download Instagram Reels and Facebook videos, convert JPG to PDF, compress images, merge PDFs, and convert PDF to JPG easily. 100% free and secure.";
+  const pageKeywords =
+    "Instagram video downloader, Facebook video downloader, JPG to PDF, compress image, merge PDF, PDF to JPG, free online converter, download Facebook video, download Instagram video, ShortsLoad, jpgstopdf";
+  const pageUrl = "https://shortsload.com/";
+  const pageImage = "https://shortsload.com/og-image.jpg";
 
   return (
     <>
       <Head>
-        <title>YouTube Shorts Downloader: Download YouTube Shorts Video</title>
-        <meta name="description" content="With our YouTube Shorts Downloader, you can download your favorite YouTube Shorts videos in the highest available quality as MP4 (video) files for free." />
-        <meta
-          name="keywords"
-          content="YouTube Shorts Downloader, ShortsLoad, download YouTube Shorts, Shorts MP4 downloader, Shorts video download, SaveTube alternative"
-        />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="keywords" content={pageKeywords} />
         <link rel="canonical" href={pageUrl} />
-          <meta property="og:title" content="YouTube Shorts Downloader: Download YouTube Shorts Video" />
-        <meta
-          property="og:description"
-          content="Free and fast tool to download YouTube Shorts videos in HD MP4 format — 360p, 720p, 1080p, with audio and no watermark."
-        />
-        <meta property="og:image" content="https://shortsload.com/og-image.jpg" />
-        <meta property="og:url" content="https://shortsload.com/" />
+
+        {/* Open Graph / Twitter */}
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={pageImage} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
+
+        {/* Schema Markup */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "ShortsLoad",
+              url: pageUrl,
+              description: pageDescription,
+              potentialAction: {
+                "@type": "SearchAction",
+                target: `${pageUrl}?q={query}`,
+                "query-input": "required name=query",
+              },
+            }),
+          }}
+        />
       </Head>
 
-      <main className="min-h-screen bg-gray-50 flex flex-col items-center px-4 py-10">
-        <header className="text-center mb-6">
-          <h1 className="text-3xl font-bold text-gray-900">
-            🎬 ShortsLoad — YouTube Shorts Downloader
-          </h1>
-          <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-            Paste a YouTube Shorts link below and download it instantly in MP4
-            (360p, 720p, 1080p) — free, fast, and no watermark.
-          </p>
-        </header>
+      <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex flex-col items-center text-center px-4 py-16">
+        {/* HERO SECTION */}
+        <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
+          🎯 ShortsLoad — Free Video & File Tools
+        </h1>
+        <p className="text-gray-600 max-w-3xl mb-10">
+          Download <strong>Instagram Reels</strong> and <strong>Facebook videos</strong> or use free
+          tools like <strong>JPG to PDF</strong>, <strong>Compress Image</strong>,{" "}
+          <strong>Merge PDF</strong>, and <strong>PDF to JPG</strong>. Fast, private, and
+          watermark-free — no sign-up or app required.
+        </p>
 
-        {/* INPUT */}
-        <div className="bg-white shadow p-6 rounded-xl w-full max-w-xl mb-8">
-          <input
-            type="text"
-            placeholder="Paste YouTube Shorts link..."
-            className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            value={url}
-            onChange={(e) => setUrl(e.target.value)}
-          />
-          <button
-            onClick={handleFetch}
-            disabled={loading}
-            className={`w-full mt-4 py-3 rounded-lg text-white font-semibold transition ${
-              loading ? "bg-gray-400" : "bg-blue-600 hover:bg-blue-700"
-            }`}
-          >
-            {loading ? "🔄 Fetching Formats..." : "Get Video Info"}
-          </button>
-          {error && <p className="text-red-500 text-center mt-3">{error}</p>}
+        {/* TOOL GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
+          {/* Instagram Downloader */}
+          <Link href="/instagramvideodownloader" className="group">
+            <div className="bg-white shadow-lg rounded-2xl p-6 border hover:shadow-2xl transition transform hover:-translate-y-1">
+              <div className="flex justify-center mb-4">
+                <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-purple-500 text-white flex items-center justify-center rounded-full text-2xl font-bold">
+                  📸
+                </div>
+              </div>
+              <h2 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-pink-600">
+                Instagram Video Downloader
+              </h2>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Download Instagram Reels and public posts in MP4 — quick, HD, and no watermark.
+              </p>
+              <div className="mt-4 text-pink-600 font-semibold">Try Now →</div>
+            </div>
+          </Link>
+
+          {/* Facebook Downloader */}
+          <Link href="/facebookvideodownloader" className="group">
+            <div className="bg-white shadow-lg rounded-2xl p-6 border hover:shadow-2xl transition transform hover:-translate-y-1">
+              <div className="flex justify-center mb-4">
+                <div className="w-14 h-14 bg-blue-600 text-white flex items-center justify-center rounded-full text-2xl font-bold">
+                  f
+                </div>
+              </div>
+              <h2 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-blue-600">
+                Facebook Video Downloader
+              </h2>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Save Facebook reels, videos, and public content directly in HD MP4 format.
+              </p>
+              <div className="mt-4 text-blue-600 font-semibold">Try Now →</div>
+            </div>
+          </Link>
+
+          {/* JPG to PDF */}
+          <Link href="https://www.jpgstopdf.com/jpgtopdf" target="_blank" className="group">
+            <div className="bg-white shadow-lg rounded-2xl p-6 border hover:shadow-2xl transition transform hover:-translate-y-1">
+              <div className="flex justify-center mb-4">
+                <div className="w-14 h-14 bg-yellow-400 text-white flex items-center justify-center rounded-full text-2xl font-bold">
+                  📄
+                </div>
+              </div>
+              <h2 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-yellow-500">
+                JPG to PDF Converter
+              </h2>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Convert multiple JPG or PNG images into one high-quality PDF document instantly.
+              </p>
+              <div className="mt-4 text-yellow-500 font-semibold">Try Now →</div>
+            </div>
+          </Link>
+
+          {/* Compress Image */}
+          <Link href="https://www.jpgstopdf.com/compressimage" target="_blank" className="group">
+            <div className="bg-white shadow-lg rounded-2xl p-6 border hover:shadow-2xl transition transform hover:-translate-y-1">
+              <div className="flex justify-center mb-4">
+                <div className="w-14 h-14 bg-green-500 text-white flex items-center justify-center rounded-full text-2xl font-bold">
+                  🗜️
+                </div>
+              </div>
+              <h2 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-green-600">
+                Compress Image Online
+              </h2>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Reduce image file size without losing visual quality — perfect for uploads.
+              </p>
+              <div className="mt-4 text-green-600 font-semibold">Try Now →</div>
+            </div>
+          </Link>
+
+          {/* Merge PDF */}
+          <Link href="https://www.jpgstopdf.com/mergepdf" target="_blank" className="group">
+            <div className="bg-white shadow-lg rounded-2xl p-6 border hover:shadow-2xl transition transform hover:-translate-y-1">
+              <div className="flex justify-center mb-4">
+                <div className="w-14 h-14 bg-purple-500 text-white flex items-center justify-center rounded-full text-2xl font-bold">
+                  🔗
+                </div>
+              </div>
+              <h2 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-purple-600">
+                Merge PDF Files
+              </h2>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Merge multiple PDF files into one — secure, instant, and free.
+              </p>
+              <div className="mt-4 text-purple-600 font-semibold">Try Now →</div>
+            </div>
+          </Link>
+
+          {/* PDF to JPG */}
+          <Link href="https://www.jpgstopdf.com/pdftojpg" target="_blank" className="group">
+            <div className="bg-white shadow-lg rounded-2xl p-6 border hover:shadow-2xl transition transform hover:-translate-y-1">
+              <div className="flex justify-center mb-4">
+                <div className="w-14 h-14 bg-red-500 text-white flex items-center justify-center rounded-full text-2xl font-bold">
+                  🖼️
+                </div>
+              </div>
+              <h2 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-red-600">
+                PDF to JPG Converter
+              </h2>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Convert every page of a PDF file into sharp, high-quality JPG images online.
+              </p>
+              <div className="mt-4 text-red-600 font-semibold">Try Now →</div>
+            </div>
+          </Link>
         </div>
 
-        {/* FETCHING */}
-        {loading && (
-          <div className="text-gray-500 animate-pulse mb-6">
-            ⏳ Fetching formats from YouTube...
-          </div>
-        )}
+        {/* ABOUT SECTION */}
+        <section className="max-w-5xl mt-20 text-gray-700 leading-relaxed space-y-6 text-left">
+          <h2 className="text-2xl font-bold text-gray-800">
+            ⚡ All-in-One Free Toolkit for Everyday Use
+          </h2>
+          <p>
+            <strong>ShortsLoad</strong> and <strong>JPGtoPDF</strong> are your go-to free platforms
+            for downloading, converting, and managing media and document files. Whether you’re
+            saving trending <strong>Instagram Reels</strong>, downloading a <strong>Facebook video</strong>,
+            or converting files like <strong>JPG to PDF</strong> or <strong>PDF to JPG</strong>,
+            these tools make it effortless — no sign-up, no watermark, no limits.
+          </p>
 
-        {/* VIDEO CARD */}
-        {video && !loading && (
-          <div className="bg-white shadow-lg p-6 rounded-xl w-full max-w-xl mb-10">
-            <h2 className="text-lg font-semibold text-gray-800 mb-3">{video.title}</h2>
-            <img
-              src={video.thumbnail}
-              alt={`${video.title} thumbnail`}
-              className="w-full rounded-lg mb-4"
-            />
-            <select
-              className="w-full border border-gray-300 rounded-lg p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
-              value={selectedQuality}
-              onChange={(e) => setSelectedQuality(e.target.value)}
-            >
-              <option value="">Select Quality</option>
-              {video.formats
-                .filter((f) => f.hasVideo)
-                .map((f, i) => (
-                  <option key={i} value={f.quality}>
-                    {f.quality} {f.hasAudio ? "🎧 With Audio" : "🔇 No Audio"}
-                  </option>
-                ))}
-            </select>
-            <button
-              onClick={handleDownload}
-              disabled={!selectedQuality || converting}
-              className={`w-full py-3 rounded-lg text-white font-semibold transition ${
-                !selectedQuality || converting
-                  ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-green-600 hover:bg-green-700"
-              }`}
-            >
-              {converting
-                ? `Processing... ${progress}%`
-                : selectedQuality
-                ? "⬇️ Download MP4"
-                : "Select a quality first"}
-            </button>
-          </div>
-        )}
+          <h3 className="text-xl font-semibold mt-4">📥 Why Use ShortsLoad Tools?</h3>
+          <p>
+            Unlike other downloaders or converters that force sign-ups or show popups, ShortsLoad
+            and JPGtoPDF focus on clean usability, speed, and data privacy. All downloads and
+            conversions happen instantly in your browser — your files never leave your device.
+          </p>
 
-{/* ✅ EXTENDED SEO CONTENT SECTION */}
-<section className="max-w-3xl text-gray-700 leading-relaxed space-y-4 mb-12">
-  <h2 className="text-2xl font-bold">📥 Free YouTube Shorts Downloader — ShortsLoad</h2>
-  <p>
-    <strong>ShortsLoad</strong> is a powerful and completely free online YouTube Shorts Downloader that lets you save your favorite Shorts in MP4 format directly to your phone, laptop, or tablet. Designed for simplicity and speed, it helps millions of users download Shorts videos in high quality — from 360p all the way up to full 1080p HD — without any watermark, ads, or complicated steps.
-  </p>
-  <p>
-    Whether you’re a student collecting educational Shorts, a content creator analyzing trending videos, or just someone who wants to keep funny and motivational clips for offline viewing, ShortsLoad makes it effortless. Our downloader processes your request instantly and provides clean download links directly from YouTube’s public CDN servers — ensuring maximum security and lightning-fast speeds.
-  </p>
+          <h3 className="text-xl font-semibold mt-4">🌐 Supported Tools</h3>
+          <ul className="list-disc ml-6 space-y-1">
+            <li>
+              <strong>Instagram Video Downloader</strong> — Save Reels and posts in MP4 HD format.
+            </li>
+            <li>
+              <strong>Facebook Video Downloader</strong> — Download Facebook videos directly from
+              the official CDN.
+            </li>
+            <li>
+              <strong>JPG to PDF</strong> — Combine multiple photos into one high-quality PDF file.
+            </li>
+            <li>
+              <strong>Compress Image</strong> — Shrink image size without affecting clarity.
+            </li>
+            <li>
+              <strong>Merge PDF</strong> — Join multiple PDF files into one seamless document.
+            </li>
+            <li>
+              <strong>PDF to JPG</strong> — Extract pages from PDFs as individual JPGs.
+            </li>
+          </ul>
 
-  <h3 className="text-xl font-semibold mt-4">⚡ How ShortsLoad Works</h3>
-  <p>
-    ShortsLoad uses the latest <strong>yt-dlp</strong> and <strong>FFmpeg</strong> technologies to extract video and audio streams safely. When you paste a YouTube Shorts URL, our lightweight backend fetches the available qualities and sends them back to your browser. You can then select the preferred resolution, and the tool either downloads the combined video instantly or merges the video and audio locally in your browser — without uploading anything to our server. This means your data and privacy are always protected.
-  </p>
-  <p>
-    The entire process happens securely inside your browser window, so no external data transfer or cloud storage is involved. Even large HD videos can be processed quickly, thanks to optimized compression and memory management.
-  </p>
+          <h3 className="text-xl font-semibold mt-4">💡 Safe, Fast, and Free Forever</h3>
+          <p>
+            All tools under ShortsLoad and JPGtoPDF are 100% browser-based, which means they don’t
+            upload your private data to any external servers. You can use them anytime, anywhere —
+            on Android, iPhone, Windows, or macOS devices. Every process is optimized for
+            performance and efficiency.
+          </p>
 
-  <h3 className="text-xl font-semibold mt-4">🎯 Why Use ShortsLoad Instead of Other Downloaders?</h3>
-  <ul className="list-disc ml-6 space-y-1">
-    <li>✅ 100% free to use — no hidden charges or premium restrictions.</li>
-    <li>✅ Works on Android, iPhone, Windows, macOS, and Linux browsers.</li>
-    <li>✅ No software installation required — everything runs in the browser.</li>
-    <li>✅ HD video quality options like 360p, 720p, and 1080p MP4.</li>
-    <li>✅ Built-in <strong>FFmpeg</strong> ensures perfect audio-video sync.</li>
-    <li>✅ Privacy-first approach — no tracking, no user data storage.</li>
-  </ul>
+          <h3 className="text-xl font-semibold mt-4">📈 Trusted by Thousands Worldwide</h3>
+          <p>
+            From students and teachers to content creators and business professionals — thousands of
+            users rely on ShortsLoad every day for quick downloads and conversions. Its simplicity,
+            clean interface, and ad-free experience make it one of the best online utility platforms
+            today.
+          </p>
 
-  <h3 className="text-xl font-semibold mt-4">💡 How to Download YouTube Shorts Using ShortsLoad</h3>
-  <ol className="list-decimal ml-6 space-y-1">
-    <li>Copy the link of the YouTube Short you want to save.</li>
-    <li>Paste the link into the input box above on this page.</li>
-    <li>Click the <strong>Get Video Info</strong> button to fetch available formats.</li>
-    <li>Select your desired resolution (360p, 720p, or 1080p).</li>
-    <li>Click <strong>Download MP4</strong> and the video will save instantly to your device.</li>
-  </ol>
+          <h3 className="text-xl font-semibold mt-4">🔒 Privacy First</h3>
+          <p>
+            ShortsLoad doesn’t store, track, or analyze any user data. Your files remain yours —
+            processed directly in your browser using secure, modern web technologies.
+          </p>
 
-  <p>
-    The process is as easy as it sounds — no sign-up, no redirects, and no watermark. ShortsLoad focuses purely on giving you a clean, fast, and reliable downloading experience every single time.
-  </p>
-
-  <h3 className="text-xl font-semibold mt-4">🌍 Features and Compatibility</h3>
-  <p>
-    ShortsLoad works perfectly across all modern browsers, including Chrome, Edge, Firefox, Safari, and Opera. It supports both mobile and desktop devices. Since it’s built with the latest version of React and optimized for Next.js performance, the interface loads quickly and feels smooth even on low-end devices. The site is fully responsive, ensuring an equally great experience on phones and wide monitors.
-  </p>
-
-  <h3 className="text-xl font-semibold mt-4">🔒 Safe, Legal, and Transparent</h3>
-  <p>
-    ShortsLoad does not host or store any copyrighted material on its servers. All YouTube Shorts you download are fetched directly from YouTube’s publicly accessible CDN links. Our tool is intended for personal and educational use only. We strongly encourage users to respect copyright laws and use downloaded videos responsibly.
-  </p>
-
-  <h3 className="text-xl font-semibold mt-4">🏆 Why People Love ShortsLoad</h3>
-  <p>
-    Thousands of users worldwide trust ShortsLoad as their go-to <strong>YouTube Shorts Downloader</strong> because of its simplicity, clean design, and reliability. It doesn’t bombard you with pop-ups or fake download buttons. The tool just works — fast, secure, and free. Whether you’re downloading one video or dozens, ShortsLoad handles it all without slowing down your browser.
-  </p>
-
-  <p>
-    If you’ve been searching for a <strong>SaveTube alternative</strong> that actually delivers HD quality and doesn’t compromise privacy, ShortsLoad is the answer. Built with the latest web technologies, it continues to improve, offering new features like playlist support, subtitles extraction, and more in future updates.
-  </p>
-
-  <p>
-    Try ShortsLoad today and experience the easiest way to <strong>download YouTube Shorts videos in MP4 format</strong>. Bookmark this page — your future self will thank you every time you need a quick, clean, and high-quality download.
-  </p>
-    </section>
+          <p>
+            So whether you’re downloading an <strong>Instagram Reel</strong>, compressing an image,
+            or converting <strong>JPG to PDF</strong>, ShortsLoad ensures a smooth, secure, and
+            free experience every time.
+          </p>
+        </section>
       </main>
     </>
   );

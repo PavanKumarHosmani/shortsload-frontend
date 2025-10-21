@@ -4,14 +4,14 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About — ShortsLoad</title>
+        <title>About — ShortsLoad & JPGtoPDF</title>
         <meta
           name="description"
-          content="Learn about ShortsLoad.com — a free, privacy-friendly YouTube Shorts Downloader that lets you save videos in MP4 format (360p, 720p, 1080p) without watermark."
+          content="Learn about ShortsLoad — a free, privacy-first platform offering Instagram and Facebook video downloaders, JPG to PDF converters, image compressors, and other online tools."
         />
         <meta
           name="keywords"
-          content="About ShortsLoad, YouTube Shorts Downloader, ShortsLoad India, FFmpeg video downloader, browser video converter, no watermark YouTube Shorts"
+          content="About ShortsLoad, Instagram video downloader, Facebook video downloader, JPG to PDF, compress image, merge PDF, PDF to JPG, ShortsLoad India, free online tools, download Facebook video, download Instagram Reels"
         />
         <link rel="canonical" href="https://shortsload.com/about" />
 
@@ -28,11 +28,12 @@ export default function About() {
                 url: "https://shortsload.com",
                 logo: "https://shortsload.com/logo.png",
                 sameAs: [
-                  "https://twitter.com/shortsload",
                   "https://facebook.com/shortsload",
+                  "https://twitter.com/shortsload",
+                  "https://www.jpgstopdf.com",
                 ],
                 description:
-                  "ShortsLoad is a free online YouTube Shorts Downloader built for speed, privacy, and simplicity — allowing users to download Shorts videos in MP4 without watermark.",
+                  "ShortsLoad is a free suite of online tools for downloading Instagram and Facebook videos, and converting files like JPG to PDF or PDF to JPG — fast, secure, and watermark-free.",
                 foundingDate: "2024",
                 founder: {
                   "@type": "Person",
@@ -52,90 +53,82 @@ export default function About() {
         <h1 className="text-3xl font-bold mb-4">About ShortsLoad</h1>
 
         <p className="mb-4">
-          <strong>ShortsLoad</strong> is a modern and privacy-focused{" "}
-          <strong>YouTube Shorts Downloader</strong> that helps users save videos in
-          MP4 format with resolutions like <strong>360p</strong>,{" "}
-          <strong>720p</strong>, and <strong>1080p</strong>. Our goal is to make
-          downloading YouTube Shorts simple, safe, and lightning fast — without ads,
-          popups, or watermarks.
+          <strong>ShortsLoad</strong> is a collection of free, modern, and
+          privacy-focused online tools designed to make your digital life easier.
+          From downloading <strong>Instagram Reels</strong> and{" "}
+          <strong>Facebook videos</strong> to converting <strong>JPG to PDF</strong> or{" "}
+          <strong>compressing images</strong>, ShortsLoad provides fast, secure, and
+          ad-safe utilities that work directly in your browser — no software
+          installation, registration, or watermark.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">💡 Our Mission</h2>
         <p className="mb-4">
-          We believe in open internet access and user empowerment. Many people want
-          to keep educational, motivational, or entertaining Shorts for offline use.
-          <strong> ShortsLoad</strong> enables that — ethically and efficiently —
-          without violating user privacy or storing any personal data.
+          At <strong>ShortsLoad</strong>, our mission is to create simple, powerful,
+          and privacy-respecting web tools for everyone. Whether you're a student,
+          creator, business professional, or casual user — we help you save videos,
+          manage files, and optimize media with ease and speed.
         </p>
 
         <p className="mb-4">
-          We strive to keep ShortsLoad fast, lightweight, and accessible to everyone,
-          even on low-end devices and slower networks. Everything runs locally inside
-          your browser — no third-party file storage or tracking.
+          We believe the internet should be open, ad-safe, and accessible. That’s why
+          we offer every feature for free, with minimal, non-intrusive advertising that
+          supports platform maintenance and future development.
         </p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">⚙️ How ShortsLoad Works</h2>
-        <p className="mb-4">
-          ShortsLoad is powered by advanced, open-source technologies like{" "}
-          <strong>yt-dlp</strong> and <strong>FFmpeg</strong>. When you paste a
-          YouTube Shorts link, our backend quickly fetches video information such as
-          available qualities and codecs. The merging and conversion process happens
-          directly in your browser using <strong>WebAssembly</strong>, keeping your
-          downloads fully private.
-        </p>
-
-        <p className="mb-4">
-          This browser-based approach ensures:
-        </p>
+        <h2 className="text-xl font-semibold mt-6 mb-2">⚙️ What We Offer</h2>
         <ul className="list-disc ml-6 mb-6 space-y-1">
-          <li>✅ No server-side video storage or tracking</li>
-          <li>✅ 100% privacy and data security</li>
-          <li>✅ Instant MP4 downloads with audio-video sync</li>
-          <li>✅ Zero external data transfer costs for users</li>
+          <li>📸 <strong>Instagram Video Downloader</strong> — Save Instagram Reels and public videos in HD MP4 format.</li>
+          <li>📘 <strong>Facebook Video Downloader</strong> — Download Facebook Reels and videos directly from Facebook’s CDN — no watermark.</li>
+          <li>📄 <strong>JPG to PDF Converter</strong> — Combine multiple images into a single PDF quickly and securely.</li>
+          <li>🗜️ <strong>Compress Image</strong> — Reduce image file size without losing quality for faster uploads.</li>
+          <li>🔗 <strong>Merge PDF Files</strong> — Combine multiple PDF documents into one in seconds.</li>
+          <li>🖼️ <strong>PDF to JPG Converter</strong> — Convert every page of your PDF into crisp JPG images instantly.</li>
+        </ul>
+
+        <h2 className="text-xl font-semibold mt-6 mb-2">🌍 How ShortsLoad Works</h2>
+        <p className="mb-4">
+          ShortsLoad and its connected tools like <strong>JPGtoPDF</strong> use secure,
+          browser-based technologies that process data locally on your device.
+          This means your files never leave your browser — ensuring complete privacy
+          and instant performance. Our servers simply fetch the video or format info
+          and never store, log, or track any user data.
+        </p>
+
+        <ul className="list-disc ml-6 mb-6 space-y-1">
+          <li>✅ Fully client-side processing (no file uploads)</li>
+          <li>✅ Safe, private, and fast performance</li>
+          <li>✅ Works across Android, iPhone, Windows, and Mac</li>
+          <li>✅ 100% free with light, non-intrusive ads</li>
         </ul>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">🚀 Why We Built ShortsLoad</h2>
         <p className="mb-4">
-          The idea for ShortsLoad came from a simple goal — to make YouTube Shorts
-          downloading effortless and transparent. Most existing tools are filled
-          with pop-ups, misleading ads, and privacy issues. ShortsLoad eliminates all
-          that, offering a minimalist, clean interface designed for real users who
-          care about speed and safety.
+          Many video downloader and converter websites today are filled with popups,
+          malware, or confusing redirects. <strong>ShortsLoad</strong> was created to
+          fix that. We focus on providing clean, transparent, and lightning-fast tools
+          that anyone can trust — built on open-source technologies and optimized for
+          real users.
+        </p>
+
+        <h2 className="text-xl font-semibold mt-6 mb-2">🧑‍💻 Built in India, Trusted Worldwide</h2>
+        <p className="mb-4">
+          <strong>ShortsLoad</strong> and <strong>JPGtoPDF</strong> are developed and
+          maintained by a small, independent team based in <strong>India</strong>.
+          Our tools are used by millions globally — creators, professionals, and
+          students alike — for their reliability, simplicity, and privacy-first design.
         </p>
 
         <p className="mb-4">
-          Unlike traditional video downloaders, ShortsLoad doesn’t rely on cloud
-          servers. Instead, it uses <strong>client-side video processing</strong>,
-          ensuring that your activity never leaves your device.
-        </p>
-
-        <h2 className="text-xl font-semibold mt-6 mb-2">🌍 Our Vision</h2>
-        <p className="mb-4">
-          ShortsLoad aims to become the world’s most trusted platform for
-          lightweight, ad-free, and open-source video utility tools. We’re expanding
-          beyond Shorts — exploring new tools like YouTube Thumbnail Downloader,
-          Instagram Reels Saver, and Online Video Merger — while keeping privacy and
-          transparency at the heart of everything we build.
-        </p>
-
-        <h2 className="text-xl font-semibold mt-6 mb-2">🧑‍💻 Built in India, Loved Worldwide</h2>
-        <p className="mb-4">
-          ShortsLoad is independently built and maintained by a small developer team
-          based in <strong>India</strong>. We are passionate about open-source tools,
-          user-first design, and building web apps that genuinely add value.
-        </p>
-
-        <p className="mb-4">
-          Although we are not affiliated with <strong>YouTube</strong> or{" "}
-          <strong>Google LLC</strong>, we fully respect their copyright and content
-          policies. ShortsLoad only works with publicly available videos from
-          YouTube’s official CDN.
+          We are not affiliated with <strong>Meta (Instagram, Facebook)</strong> or any
+          third-party platform. All downloads come directly from publicly accessible
+          CDN links, in accordance with each platform’s fair use and copyright rules.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">📫 Get in Touch</h2>
         <p className="mb-4">
-          Have questions, feature suggestions, or partnership ideas? We’d love to
-          hear from you. Contact us anytime at{" "}
+          Have feedback, partnership ideas, or want to advertise with us? We’d love to
+          hear from you! Reach us at{" "}
           <a
             href="mailto:contact@shortsload.com"
             className="text-blue-600 underline"
@@ -146,18 +139,19 @@ export default function About() {
         </p>
 
         <section className="mt-10 text-gray-700 space-y-3">
-          <h3 className="text-xl font-semibold">Why People Trust ShortsLoad</h3>
+          <h3 className="text-xl font-semibold">Why Users Trust ShortsLoad</h3>
           <ul className="list-disc ml-6 space-y-1">
-            <li>✔️ 100% free — no sign-ups or hidden costs</li>
-            <li>✔️ Works on Android, iPhone, Windows, and macOS</li>
-            <li>✔️ Secure, open-source, and privacy-respecting</li>
-            <li>✔️ Fast processing with no watermark</li>
-            <li>✔️ Supported by a growing global community</li>
+            <li>✔️ 100% Free — no hidden fees, no login</li>
+            <li>✔️ Fast and reliable downloads and conversions</li>
+            <li>✔️ Works on all major browsers and devices</li>
+            <li>✔️ Secure, ad-safe, and privacy-compliant</li>
+            <li>✔️ Built with ❤️ in India for global users</li>
           </ul>
           <p>
-            Join thousands of creators, students, and professionals who use
-            <strong> ShortsLoad</strong> daily for their YouTube Shorts downloads.
-            We’re here to make short video saving as effortless as it should be.
+            Every day, thousands of people use <strong>ShortsLoad</strong> and{" "}
+            <strong>JPGtoPDF</strong> for video downloads, file conversions, and
+            media optimization. Our goal is to remain your most trusted and
+            user-friendly web toolkit — forever free, transparent, and fast.
           </p>
         </section>
 
