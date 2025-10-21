@@ -60,7 +60,7 @@ export default function InstagramVideoDownloader() {
     "Download Instagram videos, Reels, and posts for free in HD MP4 format. Fast, secure, and watermark-free Instagram video downloader. Works on all devices.";
   const seoKeywords =
     "instagram video download, instagram video downloader, instagram post download, instagram download video, instagram reels download, free instagram downloader";
-  const pageUrl = "https://shortsload.com/instagram";
+  const pageUrl = "https://shortsload.com/instagramvideodownloader";
   const pageImage = video?.thumbnail || "https://shortsload.com/og-image.jpg";
 
   return (
@@ -257,6 +257,43 @@ export default function InstagramVideoDownloader() {
             experience.
           </p>
         </section>
+        <section className="max-w-3xl text-gray-700 leading-relaxed space-y-4 mt-10">
+  <h2 className="text-2xl font-bold">📥 Free Instagram Video Downloader — ShortsLoad</h2>
+  <p>
+    <strong>ShortsLoad Instagram Video Downloader</strong> is a free and secure online tool 
+    that lets you download Instagram Reels, Posts, and IGTV videos in HD MP4 format directly 
+    to your device. Whether you’re saving your own content or a public reel for offline viewing, 
+    our downloader makes it simple and fast — without requiring login or installing any app.
+  </p>
+
+  <h3 className="text-xl font-semibold mt-4">⚡ How to Use the Tool</h3>
+  <ol className="list-decimal ml-6 space-y-1">
+    <li>Open Instagram and copy the link of the video, reel, or post you want to download.</li>
+    <li>Paste the link in the input box above.</li>
+    <li>Click the <strong>“Get Video Info”</strong> button.</li>
+    <li>Select the desired quality (HD, Full HD, etc.) and click <strong>Download</strong>.</li>
+  </ol>
+  <p>
+    The video will be saved instantly on your phone, tablet, or computer — no watermark, no signup, 
+    and no redirects.
+  </p>
+
+  <h3 className="text-xl font-semibold mt-4">🌍 Why Choose ShortsLoad?</h3>
+  <ul className="list-disc ml-6 space-y-1">
+    <li>✅ 100% free and unlimited downloads</li>
+    <li>✅ Works for public Reels, posts, and IGTV videos</li>
+    <li>✅ High-speed processing with no watermark</li>
+    <li>✅ Compatible with all browsers and devices</li>
+    <li>✅ Safe, private, and ad-friendly experience</li>
+  </ul>
+
+  <p>
+    <strong>ShortsLoad</strong> does not store or host Instagram content. All downloads are processed 
+    directly from Instagram’s CDN, ensuring safety and compliance. Save your favorite Reels today and 
+    enjoy offline viewing anytime!
+  </p>
+</section>
+
       </main>
     </>
   );

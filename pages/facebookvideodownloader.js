@@ -59,7 +59,7 @@ export default function FacebookVideoDownloader() {
     "Free Facebook Video Downloader — download videos, reels, and public posts from Facebook in HD and 4K MP4 format. Fast, secure, and no watermark.";
   const seoKeywords =
     "facebook video download, fb video download, facebook video downloader, download facebook video, facebook reels download, download video fb, facebook video download hd";
-  const pageUrl = "https://shortsload.com/facebook";
+  const pageUrl = "https://shortsload.com/facebookvideodownloader";
   const pageImage = video?.thumbnail || "https://shortsload.com/og-image.jpg";
 
   return (
@@ -245,6 +245,45 @@ export default function FacebookVideoDownloader() {
             ShortsLoad provides a simple, ad-free, and reliable downloader experience.
           </p>
         </section>
+        <section className="max-w-3xl text-gray-700 leading-relaxed space-y-4 mt-10">
+  <h2 className="text-2xl font-bold">📥 Free Facebook Video Downloader — ShortsLoad</h2>
+  <p>
+    <strong>ShortsLoad Facebook Video Downloader</strong> is a fast, secure, and free online tool 
+    that helps you download Facebook videos, reels, and posts directly in high-quality MP4 format. 
+    Whether you want to save a public reel, an educational video, or a trending clip, our downloader 
+    allows you to do it in seconds — without watermark and without login.
+  </p>
+
+  <h3 className="text-xl font-semibold mt-4">⚡ How to Download Facebook Videos</h3>
+  <ol className="list-decimal ml-6 space-y-1">
+    <li>Copy the link of the Facebook video, reel, or post you wish to download.</li>
+    <li>Paste it into the input box at the top of this page.</li>
+    <li>Click the <strong>“Get Video Info”</strong> button.</li>
+    <li>Choose your preferred video quality (SD, HD, or Full HD).</li>
+    <li>Click <strong>Download MP4</strong> to save it instantly to your device.</li>
+  </ol>
+  <p>
+    The downloaded video will be saved in MP4 format, compatible with all smartphones, tablets, 
+    and desktop systems — without any watermark or quality loss.
+  </p>
+
+  <h3 className="text-xl font-semibold mt-4">🌍 Why Use ShortsLoad for Facebook Video Downloads?</h3>
+  <ul className="list-disc ml-6 space-y-1">
+    <li>✅ 100% free and unlimited downloads</li>
+    <li>✅ Works with public videos, reels, and pages</li>
+    <li>✅ High-quality MP4 files — HD and Full HD supported</li>
+    <li>✅ Safe, no login, and no watermark</li>
+    <li>✅ Browser-based — no software or app required</li>
+  </ul>
+
+  <p>
+    <strong>ShortsLoad</strong> does not host any Facebook content or store user data. All video files 
+    are fetched securely from Facebook’s public CDN. The entire process happens inside your browser, 
+    ensuring full privacy and compliance. Use our <strong>Facebook Video Downloader</strong> today to 
+    save and enjoy your favorite Facebook Reels and videos offline — fast, free, and in HD quality.
+  </p>
+</section>
+
       </main>
     </>
   );
