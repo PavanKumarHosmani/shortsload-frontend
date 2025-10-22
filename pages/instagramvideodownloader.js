@@ -168,12 +168,12 @@ export default function InstagramVideoDownloader() {
             {/* 🎞 Thumbnail with play overlay */}
             <div className="relative w-full max-w-[220px] md:max-w-[260px] rounded-xl overflow-hidden cursor-pointer group">
               <img
-                src={video.thumbnail}
+                // src={video.thumbnail}
                 alt={`${video.title} - Instagram Video Downloader thumbnail`}
                 className="w-full h-auto rounded-xl object-cover border border-gray-200 transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
                 referrerPolicy="no-referrer"
-                itemProp="thumbnailUrl"
+                // itemProp="thumbnailUrl"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = "/fallback-thumbnail.jpg";
