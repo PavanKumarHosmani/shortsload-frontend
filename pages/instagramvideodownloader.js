@@ -267,12 +267,7 @@ export default function InstagramVideoDownloader() {
   </p>
 
   <h3 className="text-xl font-semibold mt-4">⚡ How to Use the Tool</h3>
-  <ol className="list-decimal ml-6 space-y-1">
-    <li>Open Instagram and copy the link of the video, reel, or post you want to download.</li>
-    <li>Paste the link in the input box above.</li>
-    <li>Click the <strong>“Get Video Info”</strong> button.</li>
-    <li>Select the desired quality (HD, Full HD, etc.) and click <strong>Download</strong>.</li>
-  </ol>
+
   <p>
     The video will be saved instantly on your phone, tablet, or computer — no watermark, no signup, 
     and no redirects.
