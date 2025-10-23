@@ -20,17 +20,35 @@ export default function App({ Component, pageProps }) {
           content="ShortsLoad — Free YouTube Shorts Downloader. Save Shorts videos in HD instantly without watermark."
         />
         <link rel="icon" href="/favicon.ico" />
+
+        {/* 🔗 Performance preconnects for faster AdSense */}
+        <link
+          rel="preconnect"
+          href="https://pagead2.googlesyndication.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://googleads.g.doubleclick.net"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://tpc.googlesyndication.com"
+          crossOrigin="anonymous"
+        />
       </Head>
 
-      {/* ✅ AdSense script handled properly */}
+      {/* ✅ Global AdSense Script (lazy load for performance) */}
       <Script
         id="adsbygoogle-init"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2964380688781577"
         crossOrigin="anonymous"
       />
 
+      {/* Site Structure */}
       <Header />
       <StickyAdBanners />
       <main className="min-h-screen bg-gray-50">
