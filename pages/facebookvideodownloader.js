@@ -85,35 +85,98 @@ export default function FacebookVideoDownloader() {
         <meta name="twitter:image" content={pageImage} />
 
         {/* Schema Markup for SEO */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebApplication",
-              name: "ShortsLoad - Facebook Video Downloader",
-              url: pageUrl,
-              description: seoDescription,
-              applicationCategory: "UtilityApplication",
-              operatingSystem: "All",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "3124",
-              },
-              potentialAction: {
-                "@type": "SearchAction",
-                target: `${pageUrl}?url={facebookUrl}`,
-                "query-input": "required name=facebookUrl",
-              },
-              offers: {
-                "@type": "Offer",
-                price: "0.00",
-                priceCurrency: "USD",
-              },
-            }),
-          }}
-        />
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is ShortsLoad free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ShortsLoad is 100% free to use. You can download unlimited videos and use tools like JPG to PDF, Compress Image, Merge PDF, and more at no cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ShortsLoad work on mobile devices?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ShortsLoad works seamlessly on Android and iPhone browsers. You can download videos or convert files directly on your phone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to use ShortsLoad tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. All conversions and downloads happen securely in your browser. ShortsLoad doesn’t collect, store, or track user data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What tools does ShortsLoad offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ShortsLoad offers free tools including Instagram Video Downloader, Facebook Video Downloader, JPG to PDF Converter, Image Compressor, Merge PDF, and PDF to JPG Converter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ShortsLoad add watermarks or require sign-up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, ShortsLoad provides clean, watermark-free downloads and conversions with no sign-up required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are ShortsLoad and JPGtoPDF affiliated with Meta or Instagram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. ShortsLoad and JPGtoPDF are independent tools and are not affiliated with Meta, Instagram, or Facebook."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I download private Facebook videos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, ShortsLoad only supports downloading public Facebook videos, reels, and posts. Private videos cannot be accessed due to Facebook’s privacy restrictions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use ShortsLoad on my mobile phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ShortsLoad works on Android, iPhone, and all mobile browsers. It’s fully responsive and optimized for mobile use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I download Facebook Reels using ShortsLoad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can download Facebook Reels just like normal videos. Paste the reel URL, select the video quality, and download instantly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What video formats and resolutions are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can download videos in MP4 format with qualities such as SD (480p), HD (720p), and Full HD (1080p). Some videos may also support 4K."
+          }
+        }
+      ]
+    }),
+  }}
+/>
+
       </Head>
 
       {/* MAIN UI */}
