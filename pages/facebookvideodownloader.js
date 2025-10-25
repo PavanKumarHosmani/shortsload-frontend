@@ -91,6 +91,9 @@ export default function FacebookVideoDownloader() {
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "name": "ShortsLoad Facebook Video Downloader – Frequently Asked Questions",
+      "description":
+        "Find answers to common questions about using ShortsLoad Facebook Video Downloader. Learn about supported devices, safety, download quality, and how to save Facebook Reels in HD.",
       "mainEntity": [
         {
           "@type": "Question",
@@ -176,6 +179,7 @@ export default function FacebookVideoDownloader() {
     }),
   }}
 />
+
 
       </Head>
 
