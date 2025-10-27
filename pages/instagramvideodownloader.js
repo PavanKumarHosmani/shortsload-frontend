@@ -118,7 +118,7 @@ export default function InstagramVideoDownloader() {
       </Head>
 
       {/* MAIN UI */}
-      <main className="min-h-screen bg-gradient-to-b from-pink-50 to-white flex flex-col items-center px-4 py-10">
+      <main className="min-h-screen bg-gradient-to-b from-pink-50 to-white flex flex-col items-center px-4 py-10 antialiased">
         {/* HEADER */}
         <header className="text-center mb-6">
           <h1 className="text-3xl font-bold text-pink-600">
@@ -257,38 +257,43 @@ export default function InstagramVideoDownloader() {
             experience.
           </p>
         </section>
+
         <section className="max-w-3xl text-gray-700 leading-relaxed space-y-4 mt-10">
-  <h2 className="text-2xl font-bold">📥 Free Instagram Video Downloader — ShortsLoad</h2>
-  <p>
-    <strong>ShortsLoad Instagram Video Downloader</strong> is a free and secure online tool 
-    that lets you download Instagram Reels, Posts, and IGTV videos in HD MP4 format directly 
-    to your device. Whether you’re saving your own content or a public reel for offline viewing, 
-    our downloader makes it simple and fast — without requiring login or installing any app.
-  </p>
+          <h2 className="text-2xl font-bold">📥 Free Instagram Video Downloader — ShortsLoad</h2>
+          <p>
+            <strong>ShortsLoad Instagram Video Downloader</strong> is a free and secure online tool 
+            that lets you download Instagram Reels, Posts, and IGTV videos in HD MP4 format directly 
+            to your device. Whether you’re saving your own content or a public reel for offline viewing, 
+            our downloader makes it simple and fast — without requiring login or installing any app.
+          </p>
 
-  <h3 className="text-xl font-semibold mt-4">⚡ How to Use the Tool</h3>
+          <h3 className="text-xl font-semibold mt-4">⚡ How to Use the Tool</h3>
 
-  <p>
-    The video will be saved instantly on your phone, tablet, or computer — no watermark, no signup, 
-    and no redirects.
-  </p>
+          <p>
+            The video will be saved instantly on your phone, tablet, or computer — no watermark, no signup, 
+            and no redirects.
+          </p>
 
-  <h3 className="text-xl font-semibold mt-4">🌍 Why Choose ShortsLoad?</h3>
-  <ul className="list-disc ml-6 space-y-1">
-    <li>✅ 100% free and unlimited downloads</li>
-    <li>✅ Works for public Reels, posts, and IGTV videos</li>
-    <li>✅ High-speed processing with no watermark</li>
-    <li>✅ Compatible with all browsers and devices</li>
-    <li>✅ Safe, private, and ad-friendly experience</li>
-  </ul>
+          <h3 className="text-xl font-semibold mt-4">🌍 Why Choose ShortsLoad?</h3>
+          <ul className="list-disc ml-6 space-y-1">
+            <li>✅ 100% free and unlimited downloads</li>
+            <li>✅ Works for public Reels, posts, and IGTV videos</li>
+            <li>✅ High-speed processing with no watermark</li>
+            <li>✅ Compatible with all browsers and devices</li>
+            <li>✅ Safe, private, and ad-friendly experience</li>
+          </ul>
 
-  <p>
-    <strong>ShortsLoad</strong> does not store or host Instagram content. All downloads are processed 
-    directly from Instagram’s CDN, ensuring safety and compliance. Save your favorite Reels today and 
-    enjoy offline viewing anytime!
-  </p>
-</section>
+          <p>
+            <strong>ShortsLoad</strong> does not store or host Instagram content. All downloads are processed 
+            directly from Instagram’s CDN, ensuring safety and compliance. Save your favorite Reels today and 
+            enjoy offline viewing anytime!
+          </p>
+        </section>
 
+        {/* ✅ Contrast-Fixed Disclaimer */}
+        <div className="text-xs text-gray-600 mt-4 text-center px-4 max-w-3xl">
+          ShortsLoad is an independent platform and not affiliated with YouTube. All content rights belong to their respective owners.
+        </div>
       </main>
     </>
   );

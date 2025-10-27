@@ -7,11 +7,11 @@ export default function TermsOfUse() {
         <title>Terms of Use — ShortsLoad & JPGtoPDF</title>
         <meta
           name="description"
-          content="Read the official Terms of Use for ShortsLoad & JPGtoPDF. Learn about user rights, copyright compliance, ad policies, and limitations when using our online tools."
+          content="Read the official Terms of Use for ShortsLoad & JPGtoPDF. Learn about user rights, copyright compliance, privacy, and limitations when using our online tools."
         />
         <meta
           name="keywords"
-          content="ShortsLoad Terms, JPGtoPDF Terms, YouTube Downloader agreement, AdSense policy, Adsterra disclaimer, copyright compliance"
+          content="ShortsLoad Terms, JPGtoPDF Terms, ShortsLoad agreement, copyright compliance, ShortsLoad usage policy"
         />
         <link rel="canonical" href="https://shortsload.com/terms" />
 
@@ -25,7 +25,7 @@ export default function TermsOfUse() {
               name: "Terms of Use — ShortsLoad & JPGtoPDF",
               url: "https://shortsload.com/terms",
               description:
-                "Official Terms of Use for ShortsLoad and JPGtoPDF, outlining user responsibilities, copyright laws, data practices, and ad disclosures.",
+                "Official Terms of Use for ShortsLoad and JPGtoPDF, outlining user responsibilities, copyright laws, and data privacy compliance.",
               publisher: {
                 "@type": "Organization",
                 name: "ShortsLoad",
@@ -47,7 +47,7 @@ export default function TermsOfUse() {
         <p className="mb-4">
           Welcome to <strong>ShortsLoad.com</strong> and{" "}
           <strong>JPGtoPDF.com</strong>. By accessing or using any of our
-          services — including YouTube Shorts Downloader, Instagram Downloader,
+          services — including the Instagram Downloader, Facebook Downloader,
           or file tools such as JPG to PDF, Compress Image, Merge PDF, or PDF to
           JPG — you agree to comply with these Terms of Use and our{" "}
           <a href="/privacy" className="text-blue-600 underline">
@@ -59,8 +59,8 @@ export default function TermsOfUse() {
         <h2 className="text-xl font-semibold mt-6 mb-2">1. Legal Usage</h2>
         <p className="mb-4">
           ShortsLoad provides web-based tools that allow users to interact with
-          publicly available content from platforms such as YouTube, Facebook,
-          and Instagram. These tools are intended strictly for{" "}
+          publicly available content from platforms such as Facebook and Instagram.
+          These tools are intended strictly for{" "}
           <strong>personal, educational, or fair-use purposes</strong>.
         </p>
         <p className="mb-4">
@@ -72,9 +72,8 @@ export default function TermsOfUse() {
         <h2 className="text-xl font-semibold mt-6 mb-2">2. No Affiliation</h2>
         <p className="mb-4">
           ShortsLoad and JPGtoPDF are independent platforms and have no
-          affiliation with <strong>YouTube</strong>,{" "}
-          <strong>Google LLC</strong>, <strong>Meta Platforms</strong> (Facebook
-          & Instagram), or any third-party website. All trademarks belong to
+          affiliation with <strong>Meta Platforms</strong> (Facebook &
+          Instagram) or any third-party website. All trademarks belong to
           their respective owners.
         </p>
 
@@ -89,14 +88,24 @@ export default function TermsOfUse() {
             platform.
           </li>
           <li>
-            You will respect third-party copyrights and adhere to{" "}
+            You will respect third-party copyrights and follow their platform
+            terms, including{" "}
             <a
-              href="https://www.youtube.com/t/terms"
+              href="https://www.facebook.com/terms"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 underline"
             >
-              YouTube’s Terms of Service
+              Facebook’s Terms of Use
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://www.instagram.com/legal/terms/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Instagram’s Terms of Service
             </a>
             .
           </li>
@@ -106,18 +115,8 @@ export default function TermsOfUse() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">4. Advertising and Revenue</h2>
-        <p className="mb-4">
-          Our websites display ads from trusted ad networks like{" "}
-          <strong>Google AdSense</strong> and <strong>Adsterra</strong> to
-          support free access to our services. These ads may use cookies to show
-          relevant content. ShortsLoad and JPGtoPDF do not endorse or control
-          third-party ads. Interactions with advertisers are solely at your own
-          risk.
-        </p>
-
         <h2 className="text-xl font-semibold mt-6 mb-2">
-          5. Disclaimer of Warranties
+          4. Disclaimer of Warranties
         </h2>
         <p className="mb-4">
           The services provided by ShortsLoad and JPGtoPDF are offered “as is”
@@ -127,7 +126,7 @@ export default function TermsOfUse() {
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">
-          6. Limitation of Liability
+          5. Limitation of Liability
         </h2>
         <p className="mb-4">
           In no event shall ShortsLoad, JPGtoPDF, or their developers be liable
@@ -136,16 +135,16 @@ export default function TermsOfUse() {
           limited to, loss of data, copyright disputes, or device malfunction.
         </p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">7. Third-Party Content</h2>
+        <h2 className="text-xl font-semibold mt-6 mb-2">6. Third-Party Content</h2>
         <p className="mb-4">
-          Our websites may contain links or ads leading to third-party sites.
+          Our websites may contain links leading to third-party sites.
           These are provided for user convenience only. We are not responsible
           for the availability, accuracy, or safety of any external content or
           services linked through our platforms.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">
-          8. Intellectual Property
+          7. Intellectual Property
         </h2>
         <p className="mb-4">
           All intellectual property, including text, layout, branding, and
@@ -155,7 +154,7 @@ export default function TermsOfUse() {
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">
-          9. Modifications to Service
+          8. Modifications to Service
         </h2>
         <p className="mb-4">
           We reserve the right to modify, update, or discontinue any part of our
@@ -165,7 +164,7 @@ export default function TermsOfUse() {
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">
-          10. Governing Law
+          9. Governing Law
         </h2>
         <p className="mb-4">
           These Terms of Use are governed by the laws of your local jurisdiction.
@@ -174,7 +173,7 @@ export default function TermsOfUse() {
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">
-          11. Contact Information
+          10. Contact Information
         </h2>
         <p className="mb-4">
           For questions, feedback, or legal concerns regarding these Terms,
@@ -206,10 +205,9 @@ export default function TermsOfUse() {
             100% privacy and no file uploads to servers.
           </p>
           <p>
-            We comply with major ad and data regulations, including{" "}
-            <strong>Google AdSense</strong>, <strong>Adsterra</strong>,{" "}
-            <strong>GDPR</strong>, and <strong>CCPA</strong>, ensuring that our
-            services remain free, transparent, and user-safe.
+            We comply with international privacy standards such as{" "}
+            <strong>GDPR</strong> and <strong>CCPA</strong>, ensuring that our
+            services remain transparent, safe, and user-respecting.
           </p>
           <p>
             By continuing to use our websites, you acknowledge that ShortsLoad

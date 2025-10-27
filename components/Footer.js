@@ -27,7 +27,7 @@ export default function Footer() {
         </Link>
       </div>
 
-      <div className="text-xs text-gray-400 mt-4">
+      <div className="text-xs text-gray-600 mt-4">
         ShortsLoad is an independent platform and not affiliated with YouTube.  
         All content is downloaded directly from public CDN servers.
       </div>

@@ -11,7 +11,7 @@ export default function Disclaimer() {
         />
         <meta
           name="keywords"
-          content="ShortsLoad disclaimer, JPGtoPDF disclaimer, ShortsLoad terms, ShortsLoad legal notice, AdSense policy, ShortsLoad copyright notice"
+          content="ShortsLoad disclaimer, JPGtoPDF disclaimer, ShortsLoad terms, ShortsLoad legal notice, ShortsLoad copyright notice"
         />
         <link rel="canonical" href="https://shortsload.com/disclaimer" />
 
@@ -25,7 +25,7 @@ export default function Disclaimer() {
               name: "Disclaimer — ShortsLoad & JPGtoPDF",
               url: "https://shortsload.com/disclaimer",
               description:
-                "Legal disclaimer for ShortsLoad & JPGtoPDF, covering copyright, fair use, ad responsibility, and liability limitations.",
+                "Legal disclaimer for ShortsLoad & JPGtoPDF, covering copyright, fair use, and liability limitations.",
               mainEntity: {
                 "@type": "Organization",
                 name: "ShortsLoad",
@@ -59,7 +59,7 @@ export default function Disclaimer() {
           Our websites may contain links to other external sites or third-party
           services that are not owned or controlled by us. While we strive to provide
           quality links, we do not monitor or verify the accuracy or reliability of
-          external content. Clicking on third-party links or advertisements is at your
+          external content. Clicking on third-party links is at your
           own discretion, and we are not responsible for any resulting experiences,
           losses, or damages.
         </p>
@@ -92,21 +92,7 @@ export default function Disclaimer() {
           we cannot guarantee uninterrupted service or error-free operation.
         </p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">4. Advertising Disclaimer</h2>
-        <p className="mb-4">
-          ShortsLoad and JPGtoPDF display ads through reputable third-party ad networks
-          such as <strong>Google AdSense</strong> and <strong>Adsterra</strong> to keep
-          the service free. These advertisements are delivered by automated systems and
-          may use cookies to serve relevant content.
-        </p>
-        <p className="mb-4">
-          We do not control the content of ads or endorse the advertised products or
-          services. Interactions with advertisers are solely between you and the
-          advertiser, and we are not responsible for any outcomes resulting from such
-          interactions.
-        </p>
-
-        <h2 className="text-xl font-semibold mt-6 mb-2">5. Limitation of Liability</h2>
+        <h2 className="text-xl font-semibold mt-6 mb-2">4. Limitation of Liability</h2>
         <p className="mb-4">
           In no event shall ShortsLoad, JPGtoPDF, or their developers be held liable
           for any direct, indirect, incidental, consequential, or punitive damages
@@ -115,15 +101,15 @@ export default function Disclaimer() {
           risk.
         </p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">6. No Affiliation Disclaimer</h2>
+        <h2 className="text-xl font-semibold mt-6 mb-2">5. No Affiliation Disclaimer</h2>
         <p className="mb-4">
           ShortsLoad and JPGtoPDF are independent platforms. We are not affiliated with,
-          endorsed by, or connected to YouTube, Meta Platforms (Facebook, Instagram),
+          endorsed by, or connected to Meta Platforms (Facebook, Instagram),
           or Google LLC. All trademarks, logos, and brand names are the property of
           their respective owners.
         </p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">7. Updates to This Disclaimer</h2>
+        <h2 className="text-xl font-semibold mt-6 mb-2">6. Updates to This Disclaimer</h2>
         <p className="mb-4">
           We may revise or update this Disclaimer at any time without prior notice.
           Users are encouraged to revisit this page periodically to stay informed of

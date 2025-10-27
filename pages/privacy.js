@@ -7,11 +7,11 @@ export default function PrivacyPolicy() {
         <title>Privacy Policy — ShortsLoad & JPGtoPDF</title>
         <meta
           name="description"
-          content="Read the complete privacy policy for ShortsLoad & JPGtoPDF. Learn how we handle cookies, ads, analytics, and data protection while keeping your privacy safe."
+          content="Read the complete privacy policy for ShortsLoad & JPGtoPDF. Learn how we handle cookies, analytics, and data protection while keeping your privacy safe."
         />
         <meta
           name="keywords"
-          content="ShortsLoad Privacy Policy, JPGtoPDF Privacy, AdSense data policy, Adsterra cookies, GDPR compliance, CCPA policy, YouTube Downloader privacy"
+          content="ShortsLoad Privacy Policy, JPGtoPDF Privacy, GDPR compliance, CCPA policy"
         />
         <link rel="canonical" href="https://shortsload.com/privacy" />
 
@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
               name: "Privacy Policy — ShortsLoad & JPGtoPDF",
               url: "https://shortsload.com/privacy",
               description:
-                "Official Privacy Policy for ShortsLoad and JPGtoPDF. Learn about our data handling, cookies, and ad partner practices (AdSense, Adsterra).",
+                "Official Privacy Policy for ShortsLoad and JPGtoPDF. Learn about our data handling, cookies, and privacy practices.",
               publisher: {
                 "@type": "Organization",
                 name: "ShortsLoad",
@@ -73,7 +73,6 @@ export default function PrivacyPolicy() {
           <li>Browser type, operating system, and device type</li>
           <li>Anonymous usage analytics (page visits, time spent, errors)</li>
           <li>Approximate location (city/country, not GPS)</li>
-          <li>Ad performance and interaction metrics (from our ad partners)</li>
         </ul>
 
         <p>
@@ -81,58 +80,15 @@ export default function PrivacyPolicy() {
           and is never linked to your personal identity.
         </p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">2. Cookies and Advertising</h2>
+        <h2 className="text-xl font-semibold mt-6 mb-2">2. Cookies</h2>
         <p className="mb-4">
-          Our site uses cookies and similar tracking technologies to improve
-          functionality and support advertising. Cookies are small text files
-          stored in your browser to help recognize your preferences or track
-          anonymous usage patterns.
+          Our site may use cookies to improve functionality and recognize your
+          preferences. Cookies are small text files stored in your browser to
+          enhance your browsing experience.
         </p>
-
-        <p className="mb-4">
-          We partner with third-party ad networks such as{" "}
-          <strong>Google AdSense</strong> and <strong>Adsterra</strong>. These
-          networks may use cookies or web beacons to deliver ads based on your
-          interests, region, or browsing activity. You can learn more about
-          personalized ads and opt-out options from:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-1">
-          <li>
-            Google Ads Policy:{" "}
-            <a
-              href="https://policies.google.com/technologies/ads"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 underline"
-            >
-              https://policies.google.com/technologies/ads
-            </a>
-          </li>
-          <li>
-            Adsterra Privacy Policy:{" "}
-            <a
-              href="https://adsterra.com/privacy-policy/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 underline"
-            >
-              https://adsterra.com/privacy-policy/
-            </a>
-          </li>
-        </ul>
-
         <p>
-          You can disable cookies in your browser settings or visit{" "}
-          <a
-            href="https://www.aboutads.info/choices/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline"
-          >
-            www.aboutads.info/choices
-          </a>{" "}
-          to manage advertising preferences.
+          You can disable cookies in your browser settings if you prefer not to
+          have them stored on your device.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">3. How We Use Data</h2>
@@ -142,14 +98,13 @@ export default function PrivacyPolicy() {
         <ul className="list-disc ml-6 mb-4 space-y-1">
           <li>Improving site speed, design, and user experience</li>
           <li>Detecting technical issues and errors</li>
-          <li>Measuring ad performance and relevance</li>
-          <li>Maintaining analytics for security and uptime</li>
+          <li>Maintaining analytics for performance and uptime</li>
         </ul>
 
         <p>
           We never sell or rent your data. We only share limited technical
-          information with analytics and ad partners who comply with GDPR and
-          CCPA standards.
+          information with analytics partners who comply with GDPR and CCPA
+          standards.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">4. Data Security</h2>
@@ -175,8 +130,8 @@ export default function PrivacyPolicy() {
           >
             JPGtoPDF.com
           </a>
-          , YouTube, or Facebook. We are not responsible for the privacy policies or
-          data handling practices of external sites.
+          , Facebook, or Instagram. We are not responsible for the privacy
+          policies or data handling practices of external sites.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">
@@ -188,7 +143,7 @@ export default function PrivacyPolicy() {
         <ul className="list-disc ml-6 mb-4 space-y-1">
           <li>Right to access and review what data we collect</li>
           <li>Right to request deletion of stored data</li>
-          <li>Right to opt-out of personalized advertising</li>
+          <li>Right to opt-out of analytics tracking</li>
           <li>Right to withdraw consent at any time</li>
         </ul>
         <p>
@@ -240,20 +195,19 @@ export default function PrivacyPolicy() {
           </h2>
           <p>
             <strong>ShortsLoad</strong> and <strong>JPGtoPDF</strong> are committed to
-            providing free, ad-supported online tools without compromising user
-            safety. All downloads and file conversions happen locally in your browser,
+            providing free, secure online tools without compromising user safety.
+            All downloads and file conversions happen locally in your browser,
             ensuring zero data retention or tracking of personal content.
           </p>
           <p>
-            Our platform complies with <strong>GDPR</strong>,{" "}
-            <strong>CCPA</strong>, and <strong>Google AdSense</strong> policies, making
-            it safe, transparent, and ad-friendly. We only use cookies essential for
-            functionality and advertising relevance.
+            Our platform complies with <strong>GDPR</strong> and{" "}
+            <strong>CCPA</strong> privacy laws, making it safe and transparent. We
+            only use essential cookies for functionality and performance.
           </p>
           <p>
             We believe users should have full control over their data. That’s why
-            ShortsLoad never asks for sign-ups, personal info, or file uploads — keeping
-            your online experience 100% private and secure.
+            ShortsLoad never asks for sign-ups, personal info, or file uploads —
+            keeping your online experience 100% private and secure.
           </p>
         </section>
       </main>

@@ -233,7 +233,7 @@ export default function FacebookVideoDownloader() {
             {/* ✅ Thumbnail */}
             <div className="relative mb-4 flex justify-center">
               {!video.thumbnail && (
-                <div className="w-40 h-40 md:w-52 md:h-52 bg-gray-200 animate-pulse flex items-center justify-center text-gray-400 rounded-lg">
+                <div className="w-40 h-40 md:w-52 md:h-52 bg-gray-200 animate-pulse flex items-center justify-center text-gray-600 rounded-lg">
                   Loading thumbnail...
                 </div>
               )}

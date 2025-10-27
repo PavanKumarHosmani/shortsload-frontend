@@ -132,7 +132,7 @@ export default function Contact() {
 
         <h2 className="text-xl font-semibold mb-3">🤝 Business & Collaboration</h2>
         <p className="mb-4">
-          For advertising, partnerships, or media inquiries, include{" "}
+          For partnerships or media inquiries, include{" "}
           <strong>“Business Inquiry”</strong> in your subject line.
           We welcome collaborations with ethical, tech-oriented, and educational brands.
         </p>
@@ -152,9 +152,8 @@ export default function Contact() {
             external file uploads. Your data stays private while you get powerful results.
           </p>
           <p>
-            We maintain a clean, <strong>ad-safe</strong>, and{" "}
-            <strong>GDPR-compliant</strong> environment to make your experience as safe
-            and user-friendly as possible.
+            We maintain a clean, <strong>privacy-compliant</strong> environment to make your
+            experience as safe and user-friendly as possible.
           </p>
         </section>
 
@@ -166,9 +165,8 @@ export default function Contact() {
             complete security and transparency.
           </p>
           <p className="mb-3">
-            When we display ads (AdSense or Adsterra), cookies may be used to deliver
-            relevant content. You can manage ad preferences via your browser settings
-            at any time.
+            We do not use tracking or advertising cookies. No user information is shared
+            or stored on our servers.
           </p>
         </section>
 

@@ -58,7 +58,7 @@ export default function About() {
           From downloading <strong>Instagram Reels</strong> and{" "}
           <strong>Facebook videos</strong> to converting <strong>JPG to PDF</strong> or{" "}
           <strong>compressing images</strong>, ShortsLoad provides fast, secure, and
-          ad-safe utilities that work directly in your browser — no software
+          user-friendly utilities that work directly in your browser — no software
           installation, registration, or watermark.
         </p>
 
@@ -71,9 +71,9 @@ export default function About() {
         </p>
 
         <p className="mb-4">
-          We believe the internet should be open, ad-safe, and accessible. That’s why
-          we offer every feature for free, with minimal, non-intrusive advertising that
-          supports platform maintenance and future development.
+          We believe the internet should be open and accessible. That’s why
+          we offer every feature for free, focusing on clean design and smooth
+          performance to support platform maintenance and future development.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">⚙️ What We Offer</h2>
@@ -99,7 +99,7 @@ export default function About() {
           <li>✅ Fully client-side processing (no file uploads)</li>
           <li>✅ Safe, private, and fast performance</li>
           <li>✅ Works across Android, iPhone, Windows, and Mac</li>
-          <li>✅ 100% free with light, non-intrusive ads</li>
+          <li>✅ 100% free and privacy-friendly</li>
         </ul>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">🚀 Why We Built ShortsLoad</h2>
@@ -127,7 +127,7 @@ export default function About() {
 
         <h2 className="text-xl font-semibold mt-6 mb-2">📫 Get in Touch</h2>
         <p className="mb-4">
-          Have feedback, partnership ideas, or want to advertise with us? We’d love to
+          Have feedback, partnership ideas, or want to collaborate with us? We’d love to
           hear from you! Reach us at{" "}
           <a
             href="mailto:contact@shortsload.com"
@@ -144,7 +144,7 @@ export default function About() {
             <li>✔️ 100% Free — no hidden fees, no login</li>
             <li>✔️ Fast and reliable downloads and conversions</li>
             <li>✔️ Works on all major browsers and devices</li>
-            <li>✔️ Secure, ad-safe, and privacy-compliant</li>
+            <li>✔️ Secure, privacy-compliant, and transparent</li>
             <li>✔️ Built with ❤️ in India for global users</li>
           </ul>
           <p>

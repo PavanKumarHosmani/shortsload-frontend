@@ -4,7 +4,7 @@ export default function Sitemap() {
 
 export async function getServerSideProps({ res }) {
   const baseUrl = "https://shortsload.com";
-  const pages = ["", "about", "privacy", "terms", "dmca", "contact"];
+  const pages = ["","facebookvideodownloader","instagramvideodownloader", "about", "privacy", "terms", "dmca", "contact"];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

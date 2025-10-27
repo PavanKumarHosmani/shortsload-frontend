@@ -11,7 +11,7 @@ export default function DMCA() {
         />
         <meta
           name="keywords"
-          content="ShortsLoad DMCA, JPGtoPDF DMCA, ShortsLoad copyright, ShortsLoad takedown, copyright notice, ShortsLoad infringement policy, DMCA form, AdSense policy"
+          content="ShortsLoad DMCA, JPGtoPDF DMCA, ShortsLoad copyright, ShortsLoad takedown, copyright notice, ShortsLoad infringement policy, DMCA form"
         />
         <link rel="canonical" href="https://shortsload.com/dmca" />
 
@@ -56,7 +56,7 @@ export default function DMCA() {
           Neither ShortsLoad nor JPGtoPDF host or store any copyrighted videos,
           files, or images on their servers. All videos and files processed through
           our services are accessed directly from publicly available sources such as
-          <strong> YouTube’s, Instagram’s, or Facebook’s official CDNs</strong>, or are
+          <strong> Instagram’s or Facebook’s official CDNs</strong>, or are
           handled locally within the user’s browser. We act solely as a neutral
           intermediary providing user-requested utilities.
         </p>
@@ -176,21 +176,21 @@ export default function DMCA() {
           converting <strong>publicly available</strong> and non-copyrighted content.
           Users must comply with platform-specific terms such as{" "}
           <a
-            href="https://www.youtube.com/t/terms"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline"
-          >
-            YouTube’s Terms of Service
-          </a>{" "}
-          and{" "}
-          <a
             href="https://www.facebook.com/terms"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline"
           >
             Facebook’s Terms of Use
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.instagram.com/legal/terms/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Instagram’s Terms of Use
           </a>
           . Consult legal counsel if unsure about the legality of your usage.
         </p>

@@ -7,7 +7,7 @@ export default function Home() {
   const pageTitle =
     "ShortsLoad — Free Video & File Tools | Instagram, Facebook, PDF & Image Converters";
   const pageDescription =
-    "Free online tools by ShortsLoad — download Instagram Reels and Facebook videos, convert JPG to PDF, compress images, merge PDFs, and convert PDF to JPG easily. 100% free and secure.";
+    "Free online tools by ShortsLoad — download Instagram Reels and Facebook videos, convert JPG to PDF, compress images, merge PDFs, and convert PDF to JPG easily. 100% free, private, and secure.";
   const pageKeywords =
     "Instagram video downloader, Facebook video downloader, JPG to PDF, compress image, merge PDF, PDF to JPG, free online converter, download Facebook video, download Instagram video, ShortsLoad, jpgstopdf";
   const pageUrl = "https://shortsload.com/";
@@ -227,8 +227,8 @@ export default function Home() {
           <p>
             From students and teachers to content creators and business professionals — thousands of
             users rely on ShortsLoad every day for quick downloads and conversions. Its simplicity,
-            clean interface, and ad-free experience make it one of the best online utility platforms
-            today.
+            clean interface, and privacy-first experience make it one of the best online utility
+            platforms today.
           </p>
 
           <h3 className="text-xl font-semibold mt-4">🔒 Privacy First</h3>

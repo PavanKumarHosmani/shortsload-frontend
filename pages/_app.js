@@ -1,15 +1,29 @@
+"use client";
+
 import "../styles/globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import Script from "next/script";
-import dynamic from "next/dynamic";
-
-const StickyAdBanners = dynamic(() => import("../components/StickyAdBanners"), {
-  ssr: false,
-});
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      // Only load once
+      if (!window.adsbygoogle && !document.querySelector("#adsbygoogle-script")) {
+        const script = document.createElement("script");
+        script.id = "adsbygoogle-script";
+        script.async = true;
+        script.crossOrigin = "anonymous";
+        script.src =
+          "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2964380688781577";
+        document.head.appendChild(script);
+      }
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <Head>
@@ -20,8 +34,6 @@ export default function App({ Component, pageProps }) {
           content="ShortsLoad — Free YouTube Shorts Downloader. Save Shorts videos in HD instantly without watermark."
         />
         <link rel="icon" href="/favicon.ico" />
-
-        {/* 🔗 Performance preconnects for faster AdSense */}
         <link
           rel="preconnect"
           href="https://pagead2.googlesyndication.com"
@@ -39,18 +51,8 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
 
-      {/* ✅ Global AdSense Script (lazy load for performance) */}
-      <Script
-        id="adsbygoogle-init"
-        strategy="lazyOnload"
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2964380688781577"
-        crossOrigin="anonymous"
-      />
-
-      {/* Site Structure */}
+      {/* Site structure */}
       <Header />
-      <StickyAdBanners />
       <main className="min-h-screen bg-gray-50">
         <Component {...pageProps} />
       </main>
