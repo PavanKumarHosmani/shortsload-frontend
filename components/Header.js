@@ -22,7 +22,7 @@ export default function Header() {
             href="/"
             className="text-2xl font-extrabold text-blue-700 tracking-tight hover:text-blue-800 transition"
           >
-            Shorts<span className="text-gray-800">Load</span>
+            fbvideo<span className="text-gray-800">downloaderonline</span>
           </Link>
 
           {/* 🔹 Desktop Navigation */}

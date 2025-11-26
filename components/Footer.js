@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="text-gray-500 text-sm text-center space-y-2 mt-10 border-t pt-6">
-      <p>© {new Date().getFullYear()} ShortsLoad.com</p>
+      <p>© {new Date().getFullYear()} fbvideodownloaderonline.com</p>
       <div className="flex flex-wrap justify-center gap-4 mt-2">
         <Link href="/privacy" className="hover:text-blue-600">
           Privacy Policy
@@ -28,8 +28,7 @@ export default function Footer() {
       </div>
 
       <div className="text-xs text-gray-600 mt-4">
-        ShortsLoad is an independent platform and not affiliated with YouTube.  
-        All content is downloaded directly from public CDN servers.
+        fbvideodownloaderonline.com is an independent platform
       </div>
     </footer>
   );
