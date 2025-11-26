@@ -46,9 +46,9 @@ export default function InstagramVideoDownloader() {
     setTimeout(() => link.click(), 100);
   };
 
-  const seoTitle = "FB Video Downloader Online — Instagram Video Downloader";
+  const seoTitle = "Instagram Reels Downloader — Save Reels & Videos";
   const seoDescription =
-    "Download Instagram videos and Reels for free in HD MP4 format. Fast, secure, watermark-free Instagram video downloader. Works on all devices.";
+    "an online free and fast tool which helps you to download instagram reels video or to save reels video to your device.";
   const seoKeywords =
     "instagram video download, instagram video downloader, instagram post download, instagram download video, instagram reels download, free instagram downloader";
   const pageUrl = "https://www.fbvideodownloaderonline.com/instagramvideodownloader";
@@ -85,7 +85,7 @@ export default function InstagramVideoDownloader() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              name: "FB Video Downloader Online - Instagram Video Downloader",
+              name: "Instagram Reels Downloader — Save Reels & Videos",
               url: pageUrl,
               description: seoDescription,
               applicationCategory: "UtilityApplication",
