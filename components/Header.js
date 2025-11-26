@@ -27,9 +27,6 @@ export default function Header() {
 
           {/* 🔹 Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 text-gray-700 font-medium">
-            <Link href="/" className="hover:text-blue-600 transition">
-              Home
-            </Link>
             <Link href="/instagramvideodownloader" className="hover:text-pink-600 transition">
               Instagram Video Downloader
             </Link>
