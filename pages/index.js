@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function Home() {
   const pageTitle =
-    "ShortsLoad — Free Video & File Tools | Instagram, Facebook, PDF & Image Converters";
+    "Facebook Video Downloader — Free Video & File Tools | Instagram, Facebook, PDF & Image Converters";
   const pageDescription =
-    "Free online tools by ShortsLoad — download Instagram Reels and Facebook videos, convert JPG to PDF, compress images, merge PDFs, and convert PDF to JPG easily. 100% free, private, and secure.";
+    "Free online tools by Facebook Video Downloader — download Instagram Reels and Facebook videos, convert JPG to PDF, compress images, merge PDFs, and convert PDF to JPG easily. 100% free, private, and secure.";
   const pageKeywords =
-    "Instagram video downloader, Facebook video downloader, JPG to PDF, compress image, merge PDF, PDF to JPG, free online converter, download Facebook video, download Instagram video, ShortsLoad, jpgstopdf";
-  const pageUrl = "https://shortsload.com/";
-  const pageImage = "https://shortsload.com/og-image.jpg";
+    "Instagram video downloader, Facebook video downloader, JPG to PDF, compress image, merge PDF, PDF to JPG, free online converter, download Facebook video, download Instagram video, Facebook Video Downloader, jpgstopdf";
+  const pageUrl = "https://FbVideoDownloaderOnline.com/";
+  const pageImage = "https://FbVideoDownloaderOnline.com/og-image.jpg";
 
   return (
     <>
@@ -36,7 +36,7 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "ShortsLoad",
+              name: "Facebook Video Downloader Online",
               url: pageUrl,
               description: pageDescription,
               potentialAction: {
@@ -52,7 +52,7 @@ export default function Home() {
       <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex flex-col items-center text-center px-4 py-16">
         {/* HERO SECTION */}
         <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
-          🎯 ShortsLoad — Free Video & File Tools
+          🎯 Facebook Video Downloader — Free Video & File Tools
         </h1>
         <p className="text-gray-600 max-w-3xl mb-10">
           Download <strong>Instagram Reels</strong> and <strong>Facebook videos</strong> or use free
@@ -178,16 +178,16 @@ export default function Home() {
             ⚡ All-in-One Free Toolkit for Everyday Use
           </h2>
           <p>
-            <strong>ShortsLoad</strong> and <strong>JPGtoPDF</strong> are your go-to free platforms
+            <strong>Facebook Video Downloader</strong> and <strong>JPGtoPDF</strong> are your go-to free platforms
             for downloading, converting, and managing media and document files. Whether you’re
             saving trending <strong>Instagram Reels</strong>, downloading a <strong>Facebook video</strong>,
             or converting files like <strong>JPG to PDF</strong> or <strong>PDF to JPG</strong>,
             these tools make it effortless — no sign-up, no watermark, no limits.
           </p>
 
-          <h3 className="text-xl font-semibold mt-4">📥 Why Use ShortsLoad Tools?</h3>
+          <h3 className="text-xl font-semibold mt-4">📥 Why Use Facebook Video Downloader Tools?</h3>
           <p>
-            Unlike other downloaders or converters that force sign-ups or show popups, ShortsLoad
+            Unlike other downloaders or converters that force sign-ups or show popups, Facebook Video Downloader
             and JPGtoPDF focus on clean usability, speed, and data privacy. All downloads and
             conversions happen instantly in your browser — your files never leave your device.
           </p>
@@ -217,7 +217,7 @@ export default function Home() {
 
           <h3 className="text-xl font-semibold mt-4">💡 Safe, Fast, and Free Forever</h3>
           <p>
-            All tools under ShortsLoad and JPGtoPDF are 100% browser-based, which means they don’t
+            All tools under Facebook Video Downloader and JPGtoPDF are 100% browser-based, which means they don’t
             upload your private data to any external servers. You can use them anytime, anywhere —
             on Android, iPhone, Windows, or macOS devices. Every process is optimized for
             performance and efficiency.
@@ -226,20 +226,20 @@ export default function Home() {
           <h3 className="text-xl font-semibold mt-4">📈 Trusted by Thousands Worldwide</h3>
           <p>
             From students and teachers to content creators and business professionals — thousands of
-            users rely on ShortsLoad every day for quick downloads and conversions. Its simplicity,
+            users rely on Facebook Video Downloader every day for quick downloads and conversions. Its simplicity,
             clean interface, and privacy-first experience make it one of the best online utility
             platforms today.
           </p>
 
           <h3 className="text-xl font-semibold mt-4">🔒 Privacy First</h3>
           <p>
-            ShortsLoad doesn’t store, track, or analyze any user data. Your files remain yours —
+            Facebook Video Downloader doesn’t store, track, or analyze any user data. Your files remain yours —
             processed directly in your browser using secure, modern web technologies.
           </p>
 
           <p>
             So whether you’re downloading an <strong>Instagram Reel</strong>, compressing an image,
-            or converting <strong>JPG to PDF</strong>, ShortsLoad ensures a smooth, secure, and
+            or converting <strong>JPG to PDF</strong>, Facebook Video Downloader ensures a smooth, secure, and
             free experience every time.
           </p>
         </section>

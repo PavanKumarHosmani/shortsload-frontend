@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://shortsload.com",
+  siteUrl: "https://www.fbvideodownloaderonline.com",
   generateRobotsTxt: true,
   changefreq: "weekly",
   priority: 0.7,

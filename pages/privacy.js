@@ -4,37 +4,36 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>Privacy Policy — ShortsLoad & JPGtoPDF</title>
+        <title>Privacy Policy — FBVideoDownloaderOnline (No Data Collection)</title>
         <meta
           name="description"
-          content="Read the complete privacy policy for ShortsLoad & JPGtoPDF. Learn how we handle cookies, analytics, and data protection while keeping your privacy safe."
+          content="Official Privacy Policy of FBVideoDownloaderOnline. Learn how we protect your privacy, collect no personal data, and process all files securely in your browser."
         />
         <meta
           name="keywords"
-          content="ShortsLoad Privacy Policy, JPGtoPDF Privacy, GDPR compliance, CCPA policy"
+          content="Facebook video downloader privacy policy, fbvideodownloaderonline privacy, data protection, no data collection"
         />
-        <link rel="canonical" href="https://shortsload.com/privacy" />
+        <link rel="canonical" href="https://fbvideodownloaderonline.com/privacy" />
 
-        {/* ✅ Structured Data for SEO */}
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "PrivacyPolicy",
-              name: "Privacy Policy — ShortsLoad & JPGtoPDF",
-              url: "https://shortsload.com/privacy",
+              name: "Privacy Policy — FBVideoDownloaderOnline",
+              url: "https://fbvideodownloaderonline.com/privacy",
               description:
-                "Official Privacy Policy for ShortsLoad and JPGtoPDF. Learn about our data handling, cookies, and privacy practices.",
+                "Privacy Policy describing how FBVideoDownloaderOnline protects user data, stores no files, and operates with full client-side processing.",
               publisher: {
                 "@type": "Organization",
-                name: "ShortsLoad",
-                url: "https://shortsload.com",
-                sameAs: [
-                  "https://facebook.com/shortsload",
-                  "https://twitter.com/shortsload",
-                  "https://www.jpgstopdf.com",
-                ],
+                name: "FBVideoDownloaderOnline",
+                url: "https://fbvideodownloaderonline.com",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://fbvideodownloaderonline.com/logo.png",
+                },
               },
             }),
           }}
@@ -45,142 +44,124 @@ export default function PrivacyPolicy() {
         <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
 
         <p className="mb-4">
-          Welcome to <strong>ShortsLoad.com</strong> and{" "}
-          <strong>JPGtoPDF.com</strong>. Your privacy is our top priority. This
-          Privacy Policy explains how we handle your data when you use our free
-          online tools — including{" "}
-          <strong>Instagram Video Downloader</strong>,{" "}
-          <strong>Facebook Video Downloader</strong>, and{" "}
-          <strong>file utilities</strong> like JPG to PDF, Compress Image, Merge
-          PDF, and PDF to JPG.
+          Welcome to <strong>FBVideoDownloaderOnline.com</strong>. Your privacy is extremely important to
+          us. This Privacy Policy explains how we operate, what data we collect, and how we keep your
+          information safe while using our tools, including:
         </p>
 
-        <p className="mb-4">
-          By using our website, you agree to this Privacy Policy and consent to
-          our use of cookies as outlined below. If you do not agree, please
-          discontinue use of our site.
+        <ul className="list-disc ml-6 mb-4">
+          <li>Facebook Video Downloader</li>
+          <li>Instagram Video Downloader (if used)</li>
+          <li>Any additional tools offered on our platform</li>
+        </ul>
+
+        <p>
+          By using our website, you agree to this Privacy Policy. If you do not agree, please stop using our
+          services.
         </p>
 
+        {/* SECTION 1 */}
         <h2 className="text-xl font-semibold mt-6 mb-2">1. Information We Collect</h2>
+
         <p className="mb-4">
-          <strong>ShortsLoad</strong> does not collect any personally identifiable
-          information (such as your name, address, or contact details). However,
-          like most websites, we collect limited, non-personal information to
-          maintain and improve our services. This may include:
+          <strong>We do NOT collect any personal information</strong> like your name, address, location,
+          phone number, or email.
         </p>
+
+        <p>We only collect basic, anonymous technical data:</p>
 
         <ul className="list-disc ml-6 mb-4 space-y-1">
-          <li>Browser type, operating system, and device type</li>
-          <li>Anonymous usage analytics (page visits, time spent, errors)</li>
-          <li>Approximate location (city/country, not GPS)</li>
+          <li>Browser type & operating system</li>
+          <li>Anonymous usage analytics (time spent, clicks, errors)</li>
+          <li>Approximate location (country/city)</li>
         </ul>
 
-        <p>
-          This information is collected using privacy-compliant analytics tools
-          and is never linked to your personal identity.
-        </p>
+        <p>This information cannot identify you and is used only to improve our service.</p>
 
+        {/* SECTION 2 */}
         <h2 className="text-xl font-semibold mt-6 mb-2">2. Cookies</h2>
+
         <p className="mb-4">
-          Our site may use cookies to improve functionality and recognize your
-          preferences. Cookies are small text files stored in your browser to
-          enhance your browsing experience.
-        </p>
-        <p>
-          You can disable cookies in your browser settings if you prefer not to
-          have them stored on your device.
+          We use minimal cookies for functionality and basic analytics. No tracking or advertising cookies
+          are used.
         </p>
 
+        <p>You may disable cookies anytime without affecting core features.</p>
+
+        {/* SECTION 3 */}
         <h2 className="text-xl font-semibold mt-6 mb-2">3. How We Use Data</h2>
-        <p className="mb-4">
-          We use aggregated, anonymous data strictly for:
-        </p>
+
+        <p className="mb-4">Anonymous data is used only to:</p>
+
         <ul className="list-disc ml-6 mb-4 space-y-1">
-          <li>Improving site speed, design, and user experience</li>
-          <li>Detecting technical issues and errors</li>
-          <li>Maintaining analytics for performance and uptime</li>
+          <li>Improve website performance</li>
+          <li>Fix issues and errors</li>
+          <li>Monitor traffic and detect misuse</li>
         </ul>
 
-        <p>
-          We never sell or rent your data. We only share limited technical
-          information with analytics partners who comply with GDPR and CCPA
-          standards.
-        </p>
+        <p>We never sell, rent, or share your data.</p>
 
+        {/* SECTION 4 */}
         <h2 className="text-xl font-semibold mt-6 mb-2">4. Data Security</h2>
+
         <p className="mb-4">
-          <strong>ShortsLoad</strong> operates using secure HTTPS connections to
-          protect data in transit. All video and file conversions occur
-          client-side in your browser, meaning no video, image, or document is
-          uploaded or stored on our servers.
-        </p>
-        <p>
-          Our infrastructure follows industry-standard data protection practices
-          to safeguard against unauthorized access.
+          <strong>All video processing happens directly in your browser.</strong> No videos or files are ever
+          uploaded to our servers.
         </p>
 
+        <p>We use secure HTTPS and follow industry security practices.</p>
+
+        {/* SECTION 5 */}
         <h2 className="text-xl font-semibold mt-6 mb-2">5. Third-Party Links</h2>
+
         <p className="mb-4">
-          Our site may contain links to external services such as{" "}
-          <a
-            href="https://www.jpgstopdf.com"
-            className="text-blue-600 underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            JPGtoPDF.com
-          </a>
-          , Facebook, or Instagram. We are not responsible for the privacy
-          policies or data handling practices of external sites.
+          Our website may contain links to Facebook, Instagram, or other platforms. We are not responsible
+          for their content or privacy practices.
         </p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">
-          6. Your Rights (GDPR / CCPA)
-        </h2>
-        <p className="mb-4">
-          Depending on your region, you may have the following rights:
-        </p>
+        {/* SECTION 6 */}
+        <h2 className="text-xl font-semibold mt-6 mb-2">6. Your Rights (GDPR / CCPA)</h2>
+
+        <p className="mb-4">Depending on your region, you may:</p>
+
         <ul className="list-disc ml-6 mb-4 space-y-1">
-          <li>Right to access and review what data we collect</li>
-          <li>Right to request deletion of stored data</li>
-          <li>Right to opt-out of analytics tracking</li>
-          <li>Right to withdraw consent at any time</li>
+          <li>Request access to your data</li>
+          <li>Request deletion of analytics data</li>
+          <li>Opt-out of analytics</li>
         </ul>
+
         <p>
-          To exercise these rights, email us at{" "}
+          Email:{" "}
           <a
-            href="mailto:support@shortsload.com"
+            href="mailto:support@fbvideodownloaderonline.com"
             className="text-blue-600 underline"
           >
-            support@shortsload.com
+            support@fbvideodownloaderonline.com
           </a>
-          . We respond to all verified requests within 30 days.
         </p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">7. Policy for Children</h2>
+        {/* SECTION 7 */}
+        <h2 className="text-xl font-semibold mt-6 mb-2">7. Children’s Privacy</h2>
+
         <p className="mb-4">
-          ShortsLoad is not directed at children under the age of 13. We do not
-          knowingly collect any data from minors. If you believe a child has
-          submitted information, please contact us to remove it immediately.
+          Our services are not intended for users under 13. We do not knowingly collect data from minors.
         </p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">
-          8. Changes to This Policy
-        </h2>
-        <p className="mb-4">
-          We may revise this Privacy Policy occasionally. The “Last updated” date
-          below reflects the latest version. Continued use of our site means you
-          accept any changes made.
-        </p>
+        {/* SECTION 8 */}
+        <h2 className="text-xl font-semibold mt-6 mb-2">8. Changes to This Policy</h2>
 
+        <p className="mb-4">This Privacy Policy may be updated from time to time.</p>
+
+        {/* SECTION 9 */}
         <h2 className="text-xl font-semibold mt-6 mb-2">9. Contact Us</h2>
-        <p className="mb-4">
-          For any questions or privacy-related requests, contact our support team at:{" "}
+
+        <p>
+          For any questions:{" "}
           <a
-            href="mailto:support@shortsload.com"
+            href="mailto:support@fbvideodownloaderonline.com"
             className="text-blue-600 underline"
           >
-            support@shortsload.com
+            support@fbvideodownloaderonline.com
           </a>
         </p>
 
@@ -188,26 +169,12 @@ export default function PrivacyPolicy() {
           Last updated: {new Date().getFullYear()}
         </p>
 
-        {/* ✅ SEO Boosted Section */}
+        {/* SEO Add-on */}
         <section className="mt-10 text-gray-700 space-y-3">
-          <h2 className="text-xl font-semibold">
-            Why Privacy Matters at ShortsLoad & JPGtoPDF
-          </h2>
+          <h2 className="text-xl font-semibold">Your Privacy Is Our Priority</h2>
           <p>
-            <strong>ShortsLoad</strong> and <strong>JPGtoPDF</strong> are committed to
-            providing free, secure online tools without compromising user safety.
-            All downloads and file conversions happen locally in your browser,
-            ensuring zero data retention or tracking of personal content.
-          </p>
-          <p>
-            Our platform complies with <strong>GDPR</strong> and{" "}
-            <strong>CCPA</strong> privacy laws, making it safe and transparent. We
-            only use essential cookies for functionality and performance.
-          </p>
-          <p>
-            We believe users should have full control over their data. That’s why
-            ShortsLoad never asks for sign-ups, personal info, or file uploads —
-            keeping your online experience 100% private and secure.
+            FBVideoDownloaderOnline processes everything locally in your browser and stores no files or
+            personal information.
           </p>
         </section>
       </main>

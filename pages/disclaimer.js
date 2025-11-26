@@ -4,36 +4,59 @@ export default function Disclaimer() {
   return (
     <>
       <Head>
-        <title>Disclaimer — ShortsLoad & JPGtoPDF</title>
+        <title>Disclaimer — FB Video Downloader Online</title>
+
         <meta
           name="description"
-          content="Official Disclaimer for ShortsLoad & JPGtoPDF — outlining copyright policy, fair use terms, and limitations of liability for our free video and file tools."
+          content="Official Disclaimer for FB Video Downloader Online — covering copyright policy, fair use guidelines, limitations of liability, and legal policies for our free Instagram video downloader."
         />
+
         <meta
           name="keywords"
-          content="ShortsLoad disclaimer, JPGtoPDF disclaimer, ShortsLoad terms, ShortsLoad legal notice, ShortsLoad copyright notice"
+          content="FB Video Downloader Online disclaimer, Instagram downloader legal notice, fair use policy, video downloader disclaimer"
         />
-        <link rel="canonical" href="https://shortsload.com/disclaimer" />
 
-        {/* ✅ Structured Data for SEO */}
+        <link rel="canonical" href="https://www.fbvideodownloaderonline.com/disclaimer" />
+
+        {/* OpenGraph SEO */}
+        <meta property="og:title" content="Disclaimer — FB Video Downloader Online" />
+        <meta
+          property="og:description"
+          content="Legal disclaimer for FB Video Downloader Online — copyright, fair use, liabilities, and more."
+        />
+        <meta property="og:url" content="https://www.fbvideodownloaderonline.com/disclaimer" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter SEO */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Disclaimer — FB Video Downloader Online" />
+        <meta
+          name="twitter:description"
+          content="Legal disclaimer for FB Video Downloader Online — copyright, fair use, liabilities, and more."
+        />
+
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebPage",
-              name: "Disclaimer — ShortsLoad & JPGtoPDF",
-              url: "https://shortsload.com/disclaimer",
-              description:
-                "Legal disclaimer for ShortsLoad & JPGtoPDF, covering copyright, fair use, and liability limitations.",
-              mainEntity: {
+              name: "Disclaimer",
+              url: "https://www.fbvideodownloaderonline.com/disclaimer",
+              inLanguage: "en",
+              isPartOf: {
+                "@type": "WebSite",
+                name: "FB Video Downloader Online",
+                url: "https://www.fbvideodownloaderonline.com",
+              },
+              publisher: {
                 "@type": "Organization",
-                name: "ShortsLoad",
-                url: "https://shortsload.com",
+                name: "FB Video Downloader Online",
+                url: "https://www.fbvideodownloaderonline.com",
                 sameAs: [
-                  "https://facebook.com/shortsload",
-                  "https://twitter.com/shortsload",
-                  "https://www.jpgstopdf.com",
+                  "https://facebook.com/fbvideodownloaderonline",
+                  "https://twitter.com/fbvideodownloader",
                 ],
               },
             }),
@@ -45,76 +68,45 @@ export default function Disclaimer() {
         <h1 className="text-3xl font-bold mb-4">Disclaimer</h1>
 
         <p className="mb-4">
-          The information and tools provided by{" "}
-          <strong>ShortsLoad.com</strong> and{" "}
-          <strong>JPGtoPDF.com</strong> (“we,” “us,” or “our”) are for general
-          informational and educational purposes only. All content and utilities
-          are provided in good faith; however, we make no representation or warranty
-          regarding the accuracy, adequacy, reliability, availability, or completeness
-          of any information or functionality on our websites.
+          The tools and information provided by <strong>FB Video Downloader Online</strong> are intended for educational and general informational purposes only. We strive for accuracy but make no guarantees regarding completeness or performance.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">1. External Links Disclaimer</h2>
         <p className="mb-4">
-          Our websites may contain links to other external sites or third-party
-          services that are not owned or controlled by us. While we strive to provide
-          quality links, we do not monitor or verify the accuracy or reliability of
-          external content. Clicking on third-party links is at your
-          own discretion, and we are not responsible for any resulting experiences,
-          losses, or damages.
+          Our website may include links to third-party services. We do not own, operate, or guarantee the content or accuracy of external websites. Use them at your own risk.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">2. Fair Use & Copyright Disclaimer</h2>
         <p className="mb-4">
-          <strong>ShortsLoad</strong> does not host, store, or distribute any
-          copyrighted videos or files. All downloads and conversions occur directly
-          between the user’s browser and the official content delivery network (CDN)
-          of the source platform — such as Facebook or Instagram. Our tools are meant
-          exclusively for <strong>personal, educational, or fair use purposes</strong>.
+          FB Video Downloader Online does not host or store copyrighted videos. All downloads occur via official Instagram CDNs. Users must comply with fair use and copyright laws.
         </p>
+
         <p className="mb-4">
-          Users are fully responsible for how they use downloaded content and must
-          comply with local copyright laws. We do not encourage or condone the use of
-          our tools to download copyrighted material without permission. If you believe
-          your copyrighted material has been improperly accessed, please see our{" "}
+          If you believe your copyrighted material is being used improperly, visit our{" "}
           <a href="/dmca" className="text-blue-600 underline">
             DMCA / Copyright Policy
-          </a>{" "}
-          page for takedown instructions.
+          </a>
+          .
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">3. Tool Usage Disclaimer</h2>
         <p className="mb-4">
-          Our free tools — including video downloaders and file converters such as
-          <strong> JPG to PDF</strong>, <strong>Compress Image</strong>,{" "}
-          <strong>Merge PDF</strong>, and <strong>PDF to JPG</strong> — are provided
-          “as-is.” While we make every effort to maintain availability and security,
-          we cannot guarantee uninterrupted service or error-free operation.
+          Our Instagram video downloader is provided “as is.” We cannot guarantee uninterrupted operation or error-free service.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">4. Limitation of Liability</h2>
         <p className="mb-4">
-          In no event shall ShortsLoad, JPGtoPDF, or their developers be held liable
-          for any direct, indirect, incidental, consequential, or punitive damages
-          arising from your use of our websites, tools, or content. Your use of our
-          services and reliance on any information provided is strictly at your own
-          risk.
+          FB Video Downloader Online and its developers shall not be liable for any damages arising from use of the website, tools, or content.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">5. No Affiliation Disclaimer</h2>
         <p className="mb-4">
-          ShortsLoad and JPGtoPDF are independent platforms. We are not affiliated with,
-          endorsed by, or connected to Meta Platforms (Facebook, Instagram),
-          or Google LLC. All trademarks, logos, and brand names are the property of
-          their respective owners.
+          FB Video Downloader Online is independent and not affiliated with Instagram, Facebook, or any other company. All trademarks belong to their respective owners.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">6. Updates to This Disclaimer</h2>
         <p className="mb-4">
-          We may revise or update this Disclaimer at any time without prior notice.
-          Users are encouraged to revisit this page periodically to stay informed of
-          any changes. Continued use of our sites after updates implies acceptance of
-          the modified terms.
+          We may update this disclaimer at any time. Continued use of the website implies acceptance of the updated terms.
         </p>
 
         <p className="mt-6">

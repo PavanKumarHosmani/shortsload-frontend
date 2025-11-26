@@ -147,10 +147,10 @@ export default function InstagramVideoDownloader() {
       <main className="min-h-screen bg-gradient-to-b from-pink-50 to-white flex flex-col items-center px-4 py-10 antialiased">
         <header className="text-center mb-6">
           <h1 className="text-3xl font-bold text-pink-600">
-            Instagram Video Downloader
+            Instagram Reels Downloader — Save Reels & Videos
           </h1>
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-            Download Instagram Reels, videos, and posts in HD MP4 — free, fast, and without watermark.
+            an online free and fast tool which helps you to download instagram reels video or to save reels video to your device.
           </p>
         </header>
 
@@ -210,6 +210,90 @@ export default function InstagramVideoDownloader() {
             </button>
           </article>
         )}
+        <section className="max-w-3xl text-gray-700 leading-relaxed space-y-4 mb-12">
+  <h2 className="text-2xl font-bold">🎥 What Types of Instagram Content Can You Download?</h2>
+  <p>
+    With FB Video Downloader Online, you can download almost every type of public Instagram media. 
+    Whether you're saving a funny Reel, a tutorial, a music clip, or a travel video, our downloader 
+    supports it all. Just paste the link and start downloading instantly — no account needed.
+  </p>
+
+  <ul className="list-disc ml-6 space-y-1">
+    <li>Instagram Reels (HD MP4)</li>
+    <li>Instagram Feed Videos</li>
+    <li>Instagram Explore Videos</li>
+    <li>Public Profile Posts</li>
+    <li>Video Carousels (multi-video posts)</li>
+  </ul>
+
+  <h2 className="text-2xl font-bold mt-6">🌟 What Makes Our Instagram Video Downloader Different?</h2>
+  <p>
+    Unlike most online downloaders that flood you with ads or slow pop-ups, 
+    FB Video Downloader Online focuses on speed, simplicity, and clean user experience. 
+    Our downloader uses optimized backend processing with fast CDN delivery.
+  </p>
+
+  <ul className="list-disc ml-6 space-y-1">
+    <li>No ads, no time limits, no signup</li>
+    <li>Ultra-fast server response</li>
+    <li>Direct MP4 download links</li>
+    <li>Accurate metadata: title, thumbnail, quality options</li>
+    <li>Works even on low-end devices and slow networks</li>
+  </ul>
+
+  <h2 className="text-2xl font-bold mt-6">📌 Is Downloading Instagram Videos Legal?</h2>
+  <p>
+    Downloading public Instagram content for personal use is generally allowed as long as you do not 
+    redistribute, re-upload, or use it for commercial purposes without permission. 
+    FB Video Downloader Online does not host or store videos. All downloads occur directly from Instagram's CDN.
+  </p>
+
+  <h2 className="text-2xl font-bold mt-6">📱 How Does the Instagram Video Downloader Work?</h2>
+  <p>
+    Our backend fetches metadata directly from publicly accessible Instagram resources. 
+    It extracts available MP4 formats, thumbnails, video IDs, and resolution options. 
+    Once processed, you get a direct download link that you can save to any device — mobile or desktop.
+  </p>
+
+  <h3 className="text-xl font-semibold mt-4">Behind-the-Scenes Technology:</h3>
+  <ul className="list-disc ml-6 space-y-1">
+    <li>Custom API engine for video extraction</li>
+    <li>Multi-CDN support for faster downloads</li>
+    <li>Automatic format detection (SD, HD, Full HD)</li>
+    <li>Optimized Next.js frontend with instant fetch</li>
+  </ul>
+
+  <h2 className="text-2xl font-bold mt-6">🔒 Safe & Private</h2>
+  <p>
+    Your privacy is our top priority. We do not log URLs, store downloaded files, or keep any user data. 
+    Every download is processed securely and instantly. No cookies, no session tracking.
+  </p>
+
+  <h2 className="text-2xl font-bold mt-6">❓ Frequently Asked Questions</h2>
+
+  <h3 className="text-lg font-semibold mt-2">Can I download Instagram Reels without an app?</h3>
+  <p>Yes! Our downloader works completely in your browser — no installation required.</p>
+
+  <h3 className="text-lg font-semibold mt-2">Will the downloaded video have a watermark?</h3>
+  <p>No. Every video is downloaded in its original quality, watermark-free.</p>
+
+  <h3 className="text-lg font-semibold mt-2">Is it safe to download Instagram videos?</h3>
+  <p>100% safe. All downloads come directly from Instagram’s CDN, and we do not store content.</p>
+
+  <h3 className="text-lg font-semibold mt-2">Can I download videos from private accounts?</h3>
+  <p>No. Only public posts and Reels can be downloaded due to Instagram’s privacy policies.</p>
+
+  <h2 className="text-2xl font-bold mt-6">🌐 Multi-Language Support Coming Soon</h2>
+  <p>
+    We are working on adding automatic language support for Hindi, Spanish, Portuguese, Arabic, 
+    and more — to make downloading easier for everyone worldwide.
+  </p>
+
+  <p className="mt-4">
+    Start downloading your favorite Instagram Reels and videos instantly — fast, free, and without watermark.
+    FB Video Downloader Online is your all-in-one solution for the smoothest Instagram download experience.
+  </p>
+</section>
 
         {/* SEO Content */}
         <section className="max-w-3xl text-gray-700 leading-relaxed space-y-4 mb-12">

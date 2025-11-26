@@ -53,9 +53,9 @@ export default function FacebookVideoDownloader() {
   };
 
   // ✅ SEO Metadata values
-  const seoTitle = "Facebook Video Downloader — Download Facebook Videos";
+  const seoTitle = "Facebook Video Downloader Online— Download Facebook Videos";
   const seoDescription =
-    "Free Facebook Video Downloader — download public Facebook videos, reels, and posts in HD and 4K MP4 format. Fast, secure, watermark-free. Works on mobile and desktop.";
+    "Facebook Video Downloader Online, Download Facebook Videos and Save them directly from facebook watch to your computer or mobile for Free without Software.";
   const seoKeywords =
     "facebook video download, fb video download, facebook video downloader, download facebook video, facebook reels download, download video fb, facebook video download hd";
   const pageUrl = "https://fbvideodownloaderonline.com/facebookvideodownloader";

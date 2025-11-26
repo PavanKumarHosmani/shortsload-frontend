@@ -7,7 +7,7 @@ export async function getServerSideProps({ res }) {
 User-agent: *
 Allow: /
 
-Sitemap: https://shortsload.com/sitemap.xml
+Sitemap: https://www.fbvideodownloaderonline.com/sitemap.xml
 `;
 
   res.setHeader("Content-Type", "text/plain");

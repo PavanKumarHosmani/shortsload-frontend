@@ -4,18 +4,24 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About — ShortsLoad & JPGtoPDF</title>
+        <title>About — FB Video Downloader Online</title>
+
         <meta
           name="description"
-          content="Learn about ShortsLoad — a free, privacy-first platform offering Instagram and Facebook video downloaders, JPG to PDF converters, image compressors, and other online tools."
+          content="FBVideoDownloaderOnline — a fast, free, privacy-friendly Facebook Reel & Video Downloader. Download Facebook videos in HD without watermark."
         />
+
         <meta
           name="keywords"
-          content="About ShortsLoad, Instagram video downloader, Facebook video downloader, JPG to PDF, compress image, merge PDF, PDF to JPG, ShortsLoad India, free online tools, download Facebook video, download Instagram Reels"
+          content="About FB video downloader, Facebook video downloader, Facebook reel downloader, save Facebook video, free online tools, HD Facebook downloader, MP4 Facebook download"
         />
-        <link rel="canonical" href="https://shortsload.com/about" />
 
-        {/* ✅ Structured Data for SEO */}
+        <link
+          rel="canonical"
+          href="https://fbvideodownloaderonline.com/about"
+        />
+
+        {/* 🔥 SEO: Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -24,20 +30,15 @@ export default function About() {
               "@type": "AboutPage",
               mainEntity: {
                 "@type": "Organization",
-                name: "ShortsLoad",
-                url: "https://shortsload.com",
-                logo: "https://shortsload.com/logo.png",
-                sameAs: [
-                  "https://facebook.com/shortsload",
-                  "https://twitter.com/shortsload",
-                  "https://www.jpgstopdf.com",
-                ],
+                name: "FBVideoDownloaderOnline",
+                url: "https://fbvideodownloaderonline.com",
+                logo: "https://fbvideodownloaderonline.com/logo.png",
                 description:
-                  "ShortsLoad is a free suite of online tools for downloading Instagram and Facebook videos, and converting files like JPG to PDF or PDF to JPG — fast, secure, and watermark-free.",
+                  "FBVideoDownloaderOnline is a free online tool to download Facebook videos and reels in HD without watermark. Fast, secure, and privacy-friendly.",
                 foundingDate: "2024",
                 founder: {
                   "@type": "Person",
-                  name: "ShortsLoad Developer Team",
+                  name: "FBVideoDownloaderOnline Team",
                 },
                 address: {
                   "@type": "PostalAddress",
@@ -49,110 +50,101 @@ export default function About() {
         />
       </Head>
 
+      {/* 💡 MAIN CONTENT */}
       <main className="max-w-3xl mx-auto p-6 text-gray-800 leading-relaxed">
-        <h1 className="text-3xl font-bold mb-4">About ShortsLoad</h1>
+        <h1 className="text-3xl font-bold mb-4">
+          About FBVideoDownloaderOnline
+        </h1>
 
         <p className="mb-4">
-          <strong>ShortsLoad</strong> is a collection of free, modern, and
-          privacy-focused online tools designed to make your digital life easier.
-          From downloading <strong>Instagram Reels</strong> and{" "}
-          <strong>Facebook videos</strong> to converting <strong>JPG to PDF</strong> or{" "}
-          <strong>compressing images</strong>, ShortsLoad provides fast, secure, and
-          user-friendly utilities that work directly in your browser — no software
-          installation, registration, or watermark.
+          <strong>FBVideoDownloaderOnline</strong> is a free, fast, and
+          privacy-focused Facebook video and Reel downloader. It allows users to
+          download any public Facebook video or Reel in HD MP4 format — without
+          watermark, without login, and without installing any apps.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">💡 Our Mission</h2>
         <p className="mb-4">
-          At <strong>ShortsLoad</strong>, our mission is to create simple, powerful,
-          and privacy-respecting web tools for everyone. Whether you're a student,
-          creator, business professional, or casual user — we help you save videos,
-          manage files, and optimize media with ease and speed.
-        </p>
-
-        <p className="mb-4">
-          We believe the internet should be open and accessible. That’s why
-          we offer every feature for free, focusing on clean design and smooth
-          performance to support platform maintenance and future development.
+          Our mission is to provide a simple, fast, and secure platform for
+          downloading Facebook videos. No ads that disturb, no redirects, and no
+          tracking. Just clean and powerful tools built for everyday users.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">⚙️ What We Offer</h2>
         <ul className="list-disc ml-6 mb-6 space-y-1">
-          <li>📸 <strong>Instagram Video Downloader</strong> — Save Instagram Reels and public videos in HD MP4 format.</li>
-          <li>📘 <strong>Facebook Video Downloader</strong> — Download Facebook Reels and videos directly from Facebook’s CDN — no watermark.</li>
-          <li>📄 <strong>JPG to PDF Converter</strong> — Combine multiple images into a single PDF quickly and securely.</li>
-          <li>🗜️ <strong>Compress Image</strong> — Reduce image file size without losing quality for faster uploads.</li>
-          <li>🔗 <strong>Merge PDF Files</strong> — Combine multiple PDF documents into one in seconds.</li>
-          <li>🖼️ <strong>PDF to JPG Converter</strong> — Convert every page of your PDF into crisp JPG images instantly.</li>
+          <li>
+            📘 <strong>Facebook Video Downloader</strong> — Download any Facebook
+            video or reel in HD MP4.
+          </li>
+          <li>
+            📥 <strong>Facebook Reels Downloader</strong> — Save reels directly
+            from Facebook’s CDN.
+          </li>
+          <li>
+            🔗 <strong>Fast Link Processing</strong> — Paste video URL, get
+            download instantly.
+          </li>
+          <li>
+            🔒 <strong>Completely Private</strong> — We do not store, track, or
+            log any user data.
+          </li>
         </ul>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">🌍 How ShortsLoad Works</h2>
+        <h2 className="text-xl font-semibold mt-6 mb-2">
+          🌍 How It Works (Secure & Private)
+        </h2>
         <p className="mb-4">
-          ShortsLoad and its connected tools like <strong>JPGtoPDF</strong> use secure,
-          browser-based technologies that process data locally on your device.
-          This means your files never leave your browser — ensuring complete privacy
-          and instant performance. Our servers simply fetch the video or format info
-          and never store, log, or track any user data.
+          FBVideoDownloaderOnline uses secure server-side link parsing and
+          browser-based downloading. We never store your video — the tool
+          extracts downloadable links directly from Facebook’s publicly
+          accessible CDN.
         </p>
 
         <ul className="list-disc ml-6 mb-6 space-y-1">
-          <li>✅ Fully client-side processing (no file uploads)</li>
-          <li>✅ Safe, private, and fast performance</li>
-          <li>✅ Works across Android, iPhone, Windows, and Mac</li>
-          <li>✅ 100% free and privacy-friendly</li>
+          <li>✔ No account required</li>
+          <li>✔ No video storage</li>
+          <li>✔ No tracking</li>
+          <li>✔ Works on Android, iOS, Windows, macOS</li>
         </ul>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">🚀 Why We Built ShortsLoad</h2>
+        <h2 className="text-xl font-semibold mt-6 mb-2">
+          🚀 Why We Built This Tool
+        </h2>
         <p className="mb-4">
-          Many video downloader and converter websites today are filled with popups,
-          malware, or confusing redirects. <strong>ShortsLoad</strong> was created to
-          fix that. We focus on providing clean, transparent, and lightning-fast tools
-          that anyone can trust — built on open-source technologies and optimized for
-          real users.
+          Many video downloader websites are full of ads, redirects, malware, or
+          confusing steps. We created a platform that is clean, fast, and
+          trustworthy — built for real users who just want a simple downloader.
         </p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">🧑‍💻 Built in India, Trusted Worldwide</h2>
+        <h2 className="text-xl font-semibold mt-6 mb-2">
+          🧑‍💻 Built in India, Trusted Worldwide
+        </h2>
         <p className="mb-4">
-          <strong>ShortsLoad</strong> and <strong>JPGtoPDF</strong> are developed and
-          maintained by a small, independent team based in <strong>India</strong>.
-          Our tools are used by millions globally — creators, professionals, and
-          students alike — for their reliability, simplicity, and privacy-first design.
+          FBVideoDownloaderOnline is developed by a small independent team in
+          <strong> India</strong>. We are not affiliated with Meta (Facebook). All
+          downloads come from public URLs in compliance with fair use rules.
         </p>
 
+        <h2 className="text-xl font-semibold mt-6 mb-2">📫 Contact Us</h2>
         <p className="mb-4">
-          We are not affiliated with <strong>Meta (Instagram, Facebook)</strong> or any
-          third-party platform. All downloads come directly from publicly accessible
-          CDN links, in accordance with each platform’s fair use and copyright rules.
-        </p>
-
-        <h2 className="text-xl font-semibold mt-6 mb-2">📫 Get in Touch</h2>
-        <p className="mb-4">
-          Have feedback, partnership ideas, or want to collaborate with us? We’d love to
-          hear from you! Reach us at{" "}
+          For feedback, suggestions, or business queries, email us at{" "}
           <a
-            href="mailto:contact@shortsload.com"
+            href="mailto:contact@fbvideodownloaderonline.com"
             className="text-blue-600 underline"
           >
-            contact@shortsload.com
+            contact@fbvideodownloaderonline.com
           </a>
-          .
         </p>
 
         <section className="mt-10 text-gray-700 space-y-3">
-          <h3 className="text-xl font-semibold">Why Users Trust ShortsLoad</h3>
+          <h3 className="text-xl font-semibold">Why Users Trust Us</h3>
           <ul className="list-disc ml-6 space-y-1">
-            <li>✔️ 100% Free — no hidden fees, no login</li>
-            <li>✔️ Fast and reliable downloads and conversions</li>
-            <li>✔️ Works on all major browsers and devices</li>
-            <li>✔️ Secure, privacy-compliant, and transparent</li>
-            <li>✔️ Built with ❤️ in India for global users</li>
+            <li>✔ 100% Free — no fees</li>
+            <li>✔ Works on all devices</li>
+            <li>✔ Secure, private, and reliable</li>
+            <li>✔ HD video quality</li>
+            <li>✔ No watermark</li>
           </ul>
-          <p>
-            Every day, thousands of people use <strong>ShortsLoad</strong> and{" "}
-            <strong>JPGtoPDF</strong> for video downloads, file conversions, and
-            media optimization. Our goal is to remain your most trusted and
-            user-friendly web toolkit — forever free, transparent, and fast.
-          </p>
         </section>
 
         <p className="text-sm text-gray-600 mt-10">
